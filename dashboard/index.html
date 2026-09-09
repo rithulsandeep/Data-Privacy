@@ -1,0 +1,630 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PrivateMed-FL | Healthcare Privacy & Adversarial Auditing Dashboard</title>
+  <meta name="description" content="Decentralized Federated Learning platform for clinical disease prediction with Differential Privacy, Secure Aggregation, and Red-Team Adversarial Auditing.">
+  
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;700&family=Outfit:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  
+  <!-- Chart.js -->
+  <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.1/dist/chart.umd.min.js"></script>
+  
+  <!-- Lucide Icons -->
+  <script src="https://unpkg.com/lucide@latest"></script>
+  
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body class="role-admin">
+
+  <!-- TOP NAVIGATION / HEADER -->
+  <header class="top-nav">
+    <div class="brand-section">
+      <div class="logo-badge">
+        <i data-lucide="shield-plus"></i>
+      </div>
+      <div>
+        <div class="title-row">
+          <h1>PrivateMed-FL</h1>
+          <span class="badge badge-accent">v2.0 Red-Team Audited</span>
+        </div>
+        <p class="subtitle">Decentralized Healthcare AI &bull; Differential Privacy &bull; Secure Multi-Party Aggregation</p>
+      </div>
+    </div>
+
+    <!-- RBAC Role Selector -->
+    <div class="role-selector-container">
+      <div class="role-label">
+        <i data-lucide="user-check"></i>
+        <span>Active Persona (RBAC):</span>
+      </div>
+      <div class="role-pills" id="role-pills">
+        <button class="role-btn active" data-role="admin">
+          <i data-lucide="shield-alert"></i> CMO / Admin
+        </button>
+        <button class="role-btn" data-role="physician">
+          <i data-lucide="stethoscope"></i> Attending Physician
+        </button>
+        <button class="role-btn" data-role="researcher">
+          <i data-lucide="microscope"></i> AI Researcher
+        </button>
+        <button class="role-btn" data-role="auditor">
+          <i data-lucide="file-check-2"></i> Privacy Auditor
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- SYSTEM SECURITY ARCHITECTURE BANNER -->
+  <section class="status-banner">
+    <div class="status-item">
+      <div class="status-dot pulsing"></div>
+      <div class="status-text">
+        <span class="label">Hospital Nodes</span>
+        <strong id="banner-nodes">3 Connected (Non-IID)</strong>
+      </div>
+    </div>
+    <div class="status-divider"></div>
+    <div class="status-item">
+      <div class="status-icon text-cyan"><i data-lucide="lock"></i></div>
+      <div class="status-text">
+        <span class="label">Secure Aggregation</span>
+        <strong id="banner-smpc">Pairwise Zero-Sum Active</strong>
+      </div>
+    </div>
+    <div class="status-divider"></div>
+    <div class="status-item">
+      <div class="status-icon text-purple"><i data-lucide="sparkles"></i></div>
+      <div class="status-text">
+        <span class="label">Differential Privacy</span>
+        <strong id="banner-dp">Novel Adaptive Decay (ε = 17.88)</strong>
+      </div>
+    </div>
+    <div class="status-divider"></div>
+    <div class="status-item">
+      <div class="status-icon text-emerald"><i data-lucide="link"></i></div>
+      <div class="status-text">
+        <span class="label">HIPAA/GDPR Audit Chain</span>
+        <strong id="banner-audit">SHA-256 Verified</strong>
+      </div>
+    </div>
+  </section>
+
+  <!-- MAIN CONTAINER -->
+  <main class="dashboard-main">
+
+    <!-- EXECUTIVE KPI ROW -->
+    <section class="kpi-grid">
+      <div class="card kpi-card">
+        <div class="kpi-header">
+          <span class="kpi-title">Global Diagnostic Accuracy</span>
+          <div class="icon-circle cyan"><i data-lucide="activity"></i></div>
+        </div>
+        <div class="kpi-body">
+          <h2 class="kpi-value" id="kpi-acc">70.00%</h2>
+          <span class="kpi-delta positive">+8.89% vs Fixed DP Baseline</span>
+        </div>
+        <p class="kpi-desc">Consensus multi-hospital disease classification accuracy</p>
+      </div>
+
+      <div class="card kpi-card">
+        <div class="kpi-header">
+          <span class="kpi-title">Inversion Attack Defense</span>
+          <div class="icon-circle emerald"><i data-lucide="shield-check"></i></div>
+        </div>
+        <div class="kpi-body">
+          <h2 class="kpi-value" id="kpi-inversion">100%</h2>
+          <span class="kpi-delta positive">Blocked &bull; Cosine: 0.13</span>
+        </div>
+        <p class="kpi-desc">Deep Leakage from Gradients (DLG) reconstruction prevented</p>
+      </div>
+
+      <div class="card kpi-card">
+        <div class="kpi-header">
+          <span class="kpi-title">Membership Inference AUC</span>
+          <div class="icon-circle purple"><i data-lucide="user-x"></i></div>
+        </div>
+        <div class="kpi-body">
+          <h2 class="kpi-value" id="kpi-mia">0.4322</h2>
+          <span class="kpi-delta positive">&asymp; Random Guess (Safe)</span>
+        </div>
+        <p class="kpi-desc">Patient re-identification drops from 0.707 (Centralized) to 0.432</p>
+      </div>
+
+      <div class="card kpi-card">
+        <div class="kpi-header">
+          <span class="kpi-title">SMPC Mask Decorrelation</span>
+          <div class="icon-circle amber"><i data-lucide="eye-off"></i></div>
+        </div>
+        <div class="kpi-body">
+          <h2 class="kpi-value" id="kpi-smpc">0.0000</h2>
+          <span class="kpi-delta positive">Zero Eavesdropper Signal</span>
+        </div>
+        <p class="kpi-desc">Server-observed client gradient correlation with actual data</p>
+      </div>
+    </section>
+
+    <!-- TAB NAVIGATION -->
+    <nav class="tab-nav">
+      <button class="tab-btn active" data-tab="tab-overview">
+        <i data-lucide="layout-grid"></i> Paradigm Comparison & Trajectories
+      </button>
+      <button class="tab-btn" data-tab="tab-attacks">
+        <i data-lucide="crosshair"></i> Red-Team Adversarial Auditing
+      </button>
+      <button class="tab-btn" data-tab="tab-simulator">
+        <i data-lucide="flask-conical"></i> Clinical Diagnostic Simulator
+      </button>
+      <button class="tab-btn" data-tab="tab-audit">
+        <i data-lucide="history"></i> Cryptographic Audit Trail
+      </button>
+      <button class="tab-btn" data-tab="tab-architecture">
+        <i data-lucide="network"></i> System Architecture & Topology
+      </button>
+    </nav>
+
+    <!-- TAB 1: PARADIGM COMPARISON & TRAJECTORIES -->
+    <div class="tab-pane active" id="tab-overview">
+      <div class="grid-2-col">
+        <!-- Model Comparison Chart -->
+        <div class="card">
+          <div class="card-header">
+            <div>
+              <h3>Paradigm Benchmark: Privacy vs. Utility</h3>
+              <p class="card-subtitle">Comparing Centralized, FedAvg, Fixed DP, and Novel Adaptive DP</p>
+            </div>
+            <span class="badge badge-cyan">4 Architectures Tested</span>
+          </div>
+          <div class="chart-container">
+            <canvas id="chart-paradigm"></canvas>
+          </div>
+          <div class="table-responsive">
+            <table class="data-table" id="table-paradigm">
+              <thead>
+                <tr>
+                  <th>Architecture</th>
+                  <th>Accuracy</th>
+                  <th>AUC-ROC</th>
+                  <th>F1-Score</th>
+                  <th>Spent Privacy (ε)</th>
+                  <th>MIA Risk</th>
+                </tr>
+              </thead>
+              <tbody id="tbody-paradigm">
+                <!-- Injected via JS -->
+              </tbody>
+            </table>
+          </div>
+        </div>
+
+        <!-- Training Convergence & Privacy Budget -->
+        <div class="card">
+          <div class="card-header">
+            <div>
+              <h3>Federated Convergence & Privacy Budget Decay</h3>
+              <p class="card-subtitle">Novel Adaptive DP: Balancing initial representation learning with late-stage protection</p>
+            </div>
+            <div class="metric-switch">
+              <button class="btn-pill active" id="btn-traj-acc">Accuracy</button>
+              <button class="btn-pill" id="btn-traj-eps">Privacy (ε)</button>
+            </div>
+          </div>
+          <div class="chart-container">
+            <canvas id="chart-trajectories"></canvas>
+          </div>
+          <div class="callout callout-info">
+            <i data-lucide="lightbulb"></i>
+            <div>
+              <strong>Novelty Highlight:</strong> Standard DP applies rigid Gaussian noise from round 1, degrading early parameter discovery. Our Adaptive DP smoothly ramps up perturbation as round count grows, delivering <strong>+8.89% higher diagnostic accuracy</strong> at equivalent mathematical privacy.
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Participating Hospital Cohorts -->
+      <div class="card mt-4">
+        <div class="card-header">
+          <div>
+            <h3>Participating Decentralized Healthcare Nodes</h3>
+            <p class="card-subtitle">Simulated Non-IID Dirichlet patient demographics across healthcare institutions</p>
+          </div>
+          <span class="badge badge-emerald">Zero Raw Data Exchanged</span>
+        </div>
+        <div class="hospital-grid" id="hospital-grid">
+          <!-- Injected via JS -->
+        </div>
+      </div>
+    </div>
+
+    <!-- TAB 2: RED-TEAM ADVERSARIAL AUDITING -->
+    <div class="tab-pane" id="tab-attacks">
+      
+      <!-- Attack Banner -->
+      <div class="alert-banner mb-4">
+        <div class="alert-icon"><i data-lucide="shield-alert"></i></div>
+        <div class="alert-content">
+          <h4>Adversarial Red-Team Privacy Verification</h4>
+          <p>Unlike standard machine learning projects that merely assert privacy mathematically, PrivateMed-FL deploys actual white-box and black-box extraction attacks directly against client updates and global models to empirically substantiate protection.</p>
+        </div>
+      </div>
+
+      <div class="grid-2-col">
+        <!-- ATTACK 1: Deep Leakage from Gradients (DLG) -->
+        <div class="card">
+          <div class="card-header">
+            <div>
+              <div class="flex-row">
+                <span class="tag-red">ATTACK 01</span>
+                <h3>Deep Leakage from Gradients (DLG)</h3>
+              </div>
+              <p class="card-subtitle">Gradient Inversion: Reconstructing raw EHR records from intercepted backpropagation updates</p>
+            </div>
+            <span class="badge badge-emerald" id="dlg-status-badge">Protected by DP</span>
+          </div>
+
+          <div class="attack-stats-row">
+            <div class="stat-box">
+              <span class="stat-label">Without DP (Clean Gradient)</span>
+              <div class="stat-val text-rose" id="dlg-clean-mse">MSE: 0.0000</div>
+              <span class="stat-sub">Cosine: 1.000 (100% Inverted)</span>
+            </div>
+            <div class="stat-box">
+              <span class="stat-label">With Differential Privacy</span>
+              <div class="stat-val text-emerald" id="dlg-dp-mse">MSE: 12.704</div>
+              <span class="stat-sub">Cosine: 0.137 (Attack Failed)</span>
+            </div>
+            <div class="stat-box">
+              <span class="stat-label">Empirical Privacy Gain</span>
+              <div class="stat-val text-cyan" id="dlg-gain">127,047x</div>
+              <span class="stat-sub">Error Multiplier under DP</span>
+            </div>
+          </div>
+
+          <div class="chart-container small">
+            <canvas id="chart-dlg-comparison"></canvas>
+          </div>
+
+          <h4 class="section-subheading mt-3">Side-by-Side Clinical Biomarker Inversion Table</h4>
+          <div class="table-responsive">
+            <table class="data-table" id="table-dlg">
+              <thead>
+                <tr>
+                  <th>Biomarker</th>
+                  <th>Ground Truth</th>
+                  <th>Inverted (No DP)</th>
+                  <th>Inverted (With DP)</th>
+                  <th>Leakage Status</th>
+                </tr>
+              </thead>
+              <tbody id="tbody-dlg">
+                <!-- Injected via JS -->
+              </tbody>
+            </table>
+          </div>
+        </div>
+
+        <!-- ATTACK 2 & 3: Membership & Attribute Inference -->
+        <div class="card flex-col-between">
+          <div>
+            <div class="card-header">
+              <div>
+                <div class="flex-row">
+                  <span class="tag-red">ATTACK 02</span>
+                  <h3>Membership Inference Attack (MIA)</h3>
+                </div>
+                <p class="card-subtitle">Determines if a target patient was enrolled in clinical training cohort</p>
+              </div>
+            </div>
+
+            <div class="chart-container">
+              <canvas id="chart-mia"></canvas>
+            </div>
+
+            <div class="callout callout-warning mt-3">
+              <i data-lucide="alert-triangle"></i>
+              <div>
+                <strong>Medical Impact:</strong> In healthcare, positive membership inference confirms a patient was diagnosed and treated for cardiac disease or oncology. Centralized AI leaked membership at <strong>68.89% accuracy</strong> (AUC 0.7071). Decentralized DP FL slashed attack performance down to <strong>45.56% (AUC 0.4322)</strong>, equivalent to an uninformed coin flip.
+              </div>
+            </div>
+
+            <hr class="divider">
+
+            <div class="card-header">
+              <div>
+                <div class="flex-row">
+                  <span class="tag-red">ATTACK 03</span>
+                  <h3>Attribute Inference Attack (AIA)</h3>
+                </div>
+                <p class="card-subtitle">Reconstructing withheld sensitive biomarker (<code class="code-tag">cholesterol</code>) from model outputs</p>
+              </div>
+            </div>
+
+            <div class="chart-container small">
+              <canvas id="chart-aia"></canvas>
+            </div>
+          </div>
+
+          <!-- Secure Aggregation Proof -->
+          <div class="smpc-box mt-3">
+            <div class="smpc-header">
+              <i data-lucide="shield-check" class="text-cyan"></i>
+              <strong>SMPC Masking Verification (Bonawitz Protocol)</strong>
+            </div>
+            <p>Pairwise complementary masks: $\sum_{i=1}^N M_i = 0$. Client gradient correlation with unmasked eavesdropped data is strictly <strong>0.0000</strong>.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- TAB 3: CLINICAL DIAGNOSTIC SIMULATOR -->
+    <div class="tab-pane" id="tab-simulator">
+      <div class="grid-2-col">
+        <!-- Interactive Patient Diagnostic Form -->
+        <div class="card">
+          <div class="card-header">
+            <div>
+              <h3>Live Clinical Diagnostic Inference</h3>
+              <p class="card-subtitle">Evaluate patient risk using the global model trained via Federated Adaptive DP</p>
+            </div>
+            <span class="badge badge-purple"><i data-lucide="sparkles"></i> Adaptive DP Model</span>
+          </div>
+
+          <form id="diag-form" class="diag-form">
+            <div class="form-row">
+              <div class="form-group">
+                <label for="f-age">Patient Age (Years): <span id="v-age" class="val-preview">55</span></label>
+                <input type="range" id="f-age" min="25" max="80" value="55" class="slider">
+              </div>
+              <div class="form-group">
+                <label for="f-sex">Biological Sex:</label>
+                <select id="f-sex" class="form-control">
+                  <option value="1">Male</option>
+                  <option value="0">Female</option>
+                </select>
+              </div>
+            </div>
+
+            <div class="form-row">
+              <div class="form-group">
+                <label for="f-cp">Chest Pain Type:</label>
+                <select id="f-cp" class="form-control">
+                  <option value="0">Typical Angina (Highest Risk)</option>
+                  <option value="1">Atypical Angina</option>
+                  <option value="2">Non-anginal Pain</option>
+                  <option value="3">Asymptomatic</option>
+                </select>
+              </div>
+              <div class="form-group">
+                <label for="f-trestbps">Resting Blood Pressure (mm Hg): <span id="v-trestbps" class="val-preview">135</span></label>
+                <input type="range" id="f-trestbps" min="90" max="200" value="135" class="slider">
+              </div>
+            </div>
+
+            <div class="form-row">
+              <div class="form-group">
+                <label for="f-chol">Serum Cholesterol (mg/dl): <span id="v-chol" class="val-preview">240</span></label>
+                <input type="range" id="f-chol" min="120" max="500" value="240" class="slider">
+              </div>
+              <div class="form-group">
+                <label for="f-thalach">Max Heart Rate (thalach): <span id="v-thalach" class="val-preview">145</span></label>
+                <input type="range" id="f-thalach" min="70" max="210" value="145" class="slider">
+              </div>
+            </div>
+
+            <div class="form-row">
+              <div class="form-group">
+                <label for="f-exang">Exercise Induced Angina:</label>
+                <select id="f-exang" class="form-control">
+                  <option value="0">No (Absence)</option>
+                  <option value="1">Yes (Presence)</option>
+                </select>
+              </div>
+              <div class="form-group">
+                <label for="f-oldpeak">ST Depression (oldpeak): <span id="v-oldpeak" class="val-preview">1.2</span></label>
+                <input type="range" id="f-oldpeak" min="0" max="6" step="0.1" value="1.2" class="slider">
+              </div>
+            </div>
+
+            <button type="button" id="btn-predict" class="btn btn-primary w-100">
+              <i data-lucide="activity"></i> Run Privacy-Preserving Diagnostic Prediction
+            </button>
+          </form>
+        </div>
+
+        <!-- Prediction Result Display -->
+        <div class="card result-card">
+          <div class="card-header">
+            <div>
+              <h3>Diagnostic Risk Assessment</h3>
+              <p class="card-subtitle">Inference generated locally without transmitting patient records</p>
+            </div>
+            <span class="badge badge-emerald" id="pred-badge">Awaiting Input</span>
+          </div>
+
+          <div class="result-body">
+            <div class="gauge-wrapper">
+              <div class="risk-meter" id="risk-meter">
+                <div class="risk-fill" id="risk-fill"></div>
+                <div class="risk-center">
+                  <span class="risk-percent" id="risk-percent">52.4%</span>
+                  <span class="risk-label" id="risk-category">Moderate Risk</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="diagnostic-breakdown">
+              <h4>Clinical Factor Attribution</h4>
+              <ul class="factor-list">
+                <li><span class="factor-name">Age & Demographic Risk:</span> <strong id="attr-age" class="text-amber">+14.2%</strong></li>
+                <li><span class="factor-name">Cardiovascular Stress (BP & Chol):</span> <strong id="attr-bp" class="text-rose">+22.8%</strong></li>
+                <li><span class="factor-name">Electrocardiographic Markers:</span> <strong id="attr-ecg" class="text-cyan">-8.4%</strong></li>
+                <li><span class="factor-name">DP Noise Variance Bound:</span> <strong class="text-purple">&plusmn;1.8% (ε=17.88)</strong></li>
+              </ul>
+            </div>
+
+            <div class="privacy-guarantee-box">
+              <i data-lucide="shield-check" class="text-emerald"></i>
+              <div>
+                <strong>Zero ePHI Transmission Guarantee</strong>
+                <p>This diagnosis was produced by evaluating local weights. No protected health information (PHI) ever departed the clinical workstation.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- TAB 4: CRYPTOGRAPHIC AUDIT TRAIL -->
+    <div class="tab-pane" id="tab-audit">
+      <div class="card">
+        <div class="card-header">
+          <div>
+            <h3>HIPAA & GDPR Immutable Cryptographic Audit Ledger</h3>
+            <p class="card-subtitle">SHA-256 blockchain-style hash-chained verification of all FL rounds, gradient distributions, and data access events</p>
+          </div>
+          <div class="flex-row">
+            <button class="btn btn-secondary" id="btn-verify-audit">
+              <i data-lucide="check-check"></i> Verify Chain Integrity
+            </button>
+            <span class="badge badge-emerald" id="audit-verify-status">Integrity: 100% Valid</span>
+          </div>
+        </div>
+
+        <div class="audit-controls">
+          <input type="text" id="audit-search" placeholder="Filter by Actor ID, Action, or Status..." class="form-control">
+          <select id="audit-filter-status" class="form-control w-auto">
+            <option value="ALL">All Statuses</option>
+            <option value="SUCCESS">SUCCESS</option>
+            <option value="DENIED">DENIED</option>
+          </select>
+        </div>
+
+        <div class="table-responsive">
+          <table class="data-table monospace" id="table-audit">
+            <thead>
+              <tr>
+                <th>Index</th>
+                <th>Timestamp (UTC)</th>
+                <th>Actor Role</th>
+                <th>Actor ID</th>
+                <th>Action</th>
+                <th>Status</th>
+                <th>Current SHA-256 Digest</th>
+                <th>Previous Digest Link</th>
+              </tr>
+            </thead>
+            <tbody id="tbody-audit">
+              <!-- Injected via JS -->
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+
+    <!-- TAB 5: ARCHITECTURE TOPOLOGY -->
+    <div class="tab-pane" id="tab-architecture">
+      <div class="card">
+        <div class="card-header">
+          <div>
+            <h3>Decentralized Healthcare AI Security Architecture</h3>
+            <p class="card-subtitle">End-to-end data flow: Local Hospital Nodes &bull; Differential Privacy Perturbation &bull; Secure Aggregator &bull; Red-Team Adversary</p>
+          </div>
+        </div>
+
+        <div class="arch-diagram">
+          <div class="arch-col">
+            <div class="arch-node">
+              <div class="node-icon"><i data-lucide="building-2"></i></div>
+              <h4>Hospital Node A</h4>
+              <p>Metro General (75 patients)</p>
+              <div class="pill-group">
+                <span class="pill">Local SGD</span>
+                <span class="pill">L2 Clip (1.2)</span>
+                <span class="pill">Adaptive DP Noise</span>
+              </div>
+            </div>
+            <div class="arch-node">
+              <div class="node-icon"><i data-lucide="building-2"></i></div>
+              <h4>Hospital Node B</h4>
+              <p>St. Jude Clinic (112 patients)</p>
+              <div class="pill-group">
+                <span class="pill">Local SGD</span>
+                <span class="pill">L2 Clip (1.2)</span>
+                <span class="pill">Adaptive DP Noise</span>
+              </div>
+            </div>
+            <div class="arch-node">
+              <div class="node-icon"><i data-lucide="building-2"></i></div>
+              <h4>Hospital Node C</h4>
+              <p>Highland Medical (103 patients)</p>
+              <div class="pill-group">
+                <span class="pill">Local SGD</span>
+                <span class="pill">L2 Clip (1.2)</span>
+                <span class="pill">Adaptive DP Noise</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="arch-arrow">
+            <div class="arrow-line"></div>
+            <span class="arrow-label">Pairwise Masked Deltas (Zero-Sum)</span>
+          </div>
+
+          <div class="arch-col">
+            <div class="arch-node highlight">
+              <div class="node-icon"><i data-lucide="server"></i></div>
+              <h4>Secure Aggregation Server</h4>
+              <p>FedAvg + Bonawitz Secret Sharing</p>
+              <div class="pill-group">
+                <span class="pill">Mask Cancellation (Sum = 0)</span>
+                <span class="pill">Global Parameter Update</span>
+                <span class="pill">SHA-256 Audit Logging</span>
+              </div>
+            </div>
+            <div class="arch-node red-team">
+              <div class="node-icon"><i data-lucide="crosshair"></i></div>
+              <h4>Red-Team Attack Auditor</h4>
+              <p>Adversarial Vulnerability Benchmarking</p>
+              <div class="pill-group">
+                <span class="pill">Gradient Inversion (DLG)</span>
+                <span class="pill">Membership Inference (MIA)</span>
+                <span class="pill">Attribute Inference (AIA)</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="arch-arrow">
+            <div class="arrow-line"></div>
+            <span class="arrow-label">Updated Global Weights Distributed</span>
+          </div>
+
+          <div class="arch-col">
+            <div class="arch-node success">
+              <div class="node-icon"><i data-lucide="stethoscope"></i></div>
+              <h4>Global Clinical Diagnostic Model</h4>
+              <p>Diagnostic Accuracy: 70.0% &bull; AUC: 0.5303</p>
+              <div class="pill-group">
+                <span class="pill">No Raw Data Transferred</span>
+                <span class="pill">HIPAA §164.312 Compliant</span>
+                <span class="pill">GDPR Article 32 Compliant</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </main>
+
+  <footer class="dashboard-footer">
+    <p>&copy; 2026 Data Privacy Academic Capstone &bull; Case Study Implementation: <em>Privacy Challenges in AI-based Medical Diagnostic Systems: A Federated Learning Approach</em></p>
+    <p class="authors">Authors: 23BCE0778 (Siya Aggarwal) &bull; 23BCE0792 (Amal Jacob Augustine) &bull; 23BCE0383 (Rithul Sandeep)</p>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>

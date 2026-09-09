@@ -1,0 +1,38 @@
+{
+  "hospitals": [
+    {
+      "id": "hospital_A",
+      "name": "Hospital A (Metro General)",
+      "patient_count": 75,
+      "disease_positive_rate": 41.9
+    },
+    {
+      "id": "hospital_B",
+      "name": "Hospital B (St. Jude Clinic)",
+      "patient_count": 112,
+      "disease_positive_rate": 100.0
+    },
+    {
+      "id": "hospital_C",
+      "name": "Hospital C (Highland Medical)",
+      "patient_count": 103,
+      "disease_positive_rate": 68.8
+    }
+  ],
+  "feature_names": [
+    "age",
+    "sex",
+    "cp",
+    "trestbps",
+    "chol",
+    "fbs",
+    "restecg",
+    "thalach",
+    "exang",
+    "oldpeak",
+    "slope",
+    "ca",
+    "thal"
+  ],
+  "dataset": "heart_disease"
+}

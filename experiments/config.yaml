@@ -1,0 +1,42 @@
+system:
+  project_name: "Privacy Challenges in AI-based Medical Diagnostics"
+  version: "2.0.0"
+  random_seed: 42
+
+dataset:
+  name: "heart_disease"          # Options: "heart_disease", "cancer_biopsy"
+  num_samples: 450
+  num_hospitals: 3
+  non_iid_alpha: 0.5             # Lower value = greater non-IID demographic skew
+  test_size: 0.2
+
+training:
+  federated_rounds: 15
+  local_epochs: 3
+  batch_size: 16
+  learning_rate: 0.008
+  centralized_epochs: 45
+
+privacy:
+  differential_privacy:
+    enabled: true
+    target_epsilon: 2.5
+    target_delta: 0.0001
+    max_grad_norm: 1.2
+    noise_multiplier: 0.85
+  adaptive_dp:
+    enabled: true
+    initial_scale: 0.6           # Faster representation learning
+    final_scale: 1.5             # Enhanced protection against extraction attacks
+  secure_aggregation:
+    enabled: true
+    masking_type: "additive_zero_sum"
+
+attacks:
+  gradient_inversion:
+    iterations: 200
+    learning_rate: 0.05
+  membership_inference:
+    shadow_splits: 2
+  attribute_inference:
+    sensitive_index: 4           # Serum cholesterol indicator

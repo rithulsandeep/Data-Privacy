@@ -1,0 +1,1493 @@
+{
+  "federated_no_dp": [
+    {
+      "round": 1,
+      "global_accuracy": 0.7333333333333333,
+      "global_auc": 0.6780303030303029,
+      "global_f1": 0.8461538461538461,
+      "global_precision": 0.7333333333333333,
+      "global_recall": 1.0,
+      "cumulative_epsilon": 0.0,
+      "sigma_applied": 0.0,
+      "client_metrics": [
+        {
+          "client_id": "hospital_A",
+          "name": "Hospital A (Metro General)",
+          "loss": 0.6322,
+          "val_acc": 0.7778,
+          "samples": 75
+        },
+        {
+          "client_id": "hospital_B",
+          "name": "Hospital B (St. Jude Clinic)",
+          "loss": 0.1894,
+          "val_acc": 1.0,
+          "samples": 112
+        },
+        {
+          "client_id": "hospital_C",
+          "name": "Hospital C (Highland Medical)",
+          "loss": 0.5852,
+          "val_acc": 0.8,
+          "samples": 103
+        }
+      ]
+    },
+    {
+      "round": 2,
+      "global_accuracy": 0.7333333333333333,
+      "global_auc": 0.6436237373737373,
+      "global_f1": 0.8461538461538461,
+      "global_precision": 0.7333333333333333,
+      "global_recall": 1.0,
+      "cumulative_epsilon": 0.0,
+      "sigma_applied": 0.0,
+      "client_metrics": [
+        {
+          "client_id": "hospital_A",
+          "name": "Hospital A (Metro General)",
+          "loss": 0.7716,
+          "val_acc": 0.7778,
+          "samples": 75
+        },
+        {
+          "client_id": "hospital_B",
+          "name": "Hospital B (St. Jude Clinic)",
+          "loss": 0.008,
+          "val_acc": 1.0,
+          "samples": 112
+        },
+        {
+          "client_id": "hospital_C",
+          "name": "Hospital C (Highland Medical)",
+          "loss": 0.6264,
+          "val_acc": 0.76,
+          "samples": 103
+        }
+      ]
+    },
+    {
+      "round": 3,
+      "global_accuracy": 0.7555555555555555,
+      "global_auc": 0.6691919191919191,
+      "global_f1": 0.8571428571428571,
+      "global_precision": 0.75,
+      "global_recall": 1.0,
+      "cumulative_epsilon": 0.0,
+      "sigma_applied": 0.0,
+      "client_metrics": [
+        {
+          "client_id": "hospital_A",
+          "name": "Hospital A (Metro General)",
+          "loss": 1.1341,
+          "val_acc": 0.7222,
+          "samples": 75
+        },
+        {
+          "client_id": "hospital_B",
+          "name": "Hospital B (St. Jude Clinic)",
+          "loss": 0.0076,
+          "val_acc": 1.0,
+          "samples": 112
+        },
+        {
+          "client_id": "hospital_C",
+          "name": "Hospital C (Highland Medical)",
+          "loss": 0.8241,
+          "val_acc": 0.8,
+          "samples": 103
+        }
+      ]
+    },
+    {
+      "round": 4,
+      "global_accuracy": 0.7333333333333333,
+      "global_auc": 0.5909090909090909,
+      "global_f1": 0.8461538461538461,
+      "global_precision": 0.7333333333333333,
+      "global_recall": 1.0,
+      "cumulative_epsilon": 0.0,
+      "sigma_applied": 0.0,
+      "client_metrics": [
+        {
+          "client_id": "hospital_A",
+          "name": "Hospital A (Metro General)",
+          "loss": 0.9402,
+          "val_acc": 0.7778,
+          "samples": 75
+        },
+        {
+          "client_id": "hospital_B",
+          "name": "Hospital B (St. Jude Clinic)",
+          "loss": 0.0117,
+          "val_acc": 1.0,
+          "samples": 112
+        },
+        {
+          "client_id": "hospital_C",
+          "name": "Hospital C (Highland Medical)",
+          "loss": 0.7415,
+          "val_acc": 0.64,
+          "samples": 103
+        }
+      ]
+    },
+    {
+      "round": 5,
+      "global_accuracy": 0.7555555555555555,
+      "global_auc": 0.6275252525252525,
+      "global_f1": 0.8533333333333334,
+      "global_precision": 0.7619047619047619,
+      "global_recall": 0.9696969696969697,
+      "cumulative_epsilon": 0.0,
+      "sigma_applied": 0.0,
+      "client_metrics": [
+        {
+          "client_id": "hospital_A",
+          "name": "Hospital A (Metro General)",
+          "loss": 1.3103,
+          "val_acc": 0.6667,
+          "samples": 75
+        },
+        {
+          "client_id": "hospital_B",
+          "name": "Hospital B (St. Jude Clinic)",
+          "loss": 0.0052,
+          "val_acc": 1.0,
+          "samples": 112
+        },
+        {
+          "client_id": "hospital_C",
+          "name": "Hospital C (Highland Medical)",
+          "loss": 0.9685,
+          "val_acc": 0.72,
+          "samples": 103
+        }
+      ]
+    },
+    {
+      "round": 6,
+      "global_accuracy": 0.7111111111111111,
+      "global_auc": 0.6565656565656567,
+      "global_f1": 0.8266666666666667,
+      "global_precision": 0.7380952380952381,
+      "global_recall": 0.9393939393939394,
+      "cumulative_epsilon": 0.0,
+      "sigma_applied": 0.0,
+      "client_metrics": [
+        {
+          "client_id": "hospital_A",
+          "name": "Hospital A (Metro General)",
+          "loss": 1.2068,
+          "val_acc": 0.6667,
+          "samples": 75
+        },
+        {
+          "client_id": "hospital_B",
+          "name": "Hospital B (St. Jude Clinic)",
+          "loss": 0.0361,
+          "val_acc": 1.0,
+          "samples": 112
+        },
+        {
+          "client_id": "hospital_C",
+          "name": "Hospital C (Highland Medical)",
+          "loss": 1.0355,
+          "val_acc": 0.72,
+          "samples": 103
+        }
+      ]
+    },
+    {
+      "round": 7,
+      "global_accuracy": 0.6888888888888889,
+      "global_auc": 0.591540404040404,
+      "global_f1": 0.8157894736842105,
+      "global_precision": 0.7209302325581395,
+      "global_recall": 0.9393939393939394,
+      "cumulative_epsilon": 0.0,
+      "sigma_applied": 0.0,
+      "client_metrics": [
+        {
+          "client_id": "hospital_A",
+          "name": "Hospital A (Metro General)",
+          "loss": 1.5919,
+          "val_acc": 0.6667,
+          "samples": 75
+        },
+        {
+          "client_id": "hospital_B",
+          "name": "Hospital B (St. Jude Clinic)",
+          "loss": 0.0503,
+          "val_acc": 1.0,
+          "samples": 112
+        },
+        {
+          "client_id": "hospital_C",
+          "name": "Hospital C (Highland Medical)",
+          "loss": 1.5259,
+          "val_acc": 0.68,
+          "samples": 103
+        }
+      ]
+    },
+    {
+      "round": 8,
+      "global_accuracy": 0.7333333333333333,
+      "global_auc": 0.6366792929292929,
+      "global_f1": 0.8461538461538461,
+      "global_precision": 0.7333333333333333,
+      "global_recall": 1.0,
+      "cumulative_epsilon": 0.0,
+      "sigma_applied": 0.0,
+      "client_metrics": [
+        {
+          "client_id": "hospital_A",
+          "name": "Hospital A (Metro General)",
+          "loss": 1.4326,
+          "val_acc": 0.5556,
+          "samples": 75
+        },
+        {
+          "client_id": "hospital_B",
+          "name": "Hospital B (St. Jude Clinic)",
+          "loss": 0.0698,
+          "val_acc": 1.0,
+          "samples": 112
+        },
+        {
+          "client_id": "hospital_C",
+          "name": "Hospital C (Highland Medical)",
+          "loss": 1.2507,
+          "val_acc": 0.56,
+          "samples": 103
+        }
+      ]
+    },
+    {
+      "round": 9,
+      "global_accuracy": 0.6333333333333333,
+      "global_auc": 0.5183080808080808,
+      "global_f1": 0.7724137931034483,
+      "global_precision": 0.7088607594936709,
+      "global_recall": 0.8484848484848485,
+      "cumulative_epsilon": 0.0,
+      "sigma_applied": 0.0,
+      "client_metrics": [
+        {
+          "client_id": "hospital_A",
+          "name": "Hospital A (Metro General)",
+          "loss": 2.2484,
+          "val_acc": 0.6667,
+          "samples": 75
+        },
+        {
+          "client_id": "hospital_B",
+          "name": "Hospital B (St. Jude Clinic)",
+          "loss": 0.0193,
+          "val_acc": 1.0,
+          "samples": 112
+        },
+        {
+          "client_id": "hospital_C",
+          "name": "Hospital C (Highland Medical)",
+          "loss": 1.435,
+          "val_acc": 0.72,
+          "samples": 103
+        }
+      ]
+    },
+    {
+      "round": 10,
+      "global_accuracy": 0.7,
+      "global_auc": 0.5940656565656566,
+      "global_f1": 0.8163265306122449,
+      "global_precision": 0.7407407407407407,
+      "global_recall": 0.9090909090909091,
+      "cumulative_epsilon": 0.0,
+      "sigma_applied": 0.0,
+      "client_metrics": [
+        {
+          "client_id": "hospital_A",
+          "name": "Hospital A (Metro General)",
+          "loss": 1.8773,
+          "val_acc": 0.6111,
+          "samples": 75
+        },
+        {
+          "client_id": "hospital_B",
+          "name": "Hospital B (St. Jude Clinic)",
+          "loss": 0.1602,
+          "val_acc": 1.0,
+          "samples": 112
+        },
+        {
+          "client_id": "hospital_C",
+          "name": "Hospital C (Highland Medical)",
+          "loss": 1.4446,
+          "val_acc": 0.48,
+          "samples": 103
+        }
+      ]
+    },
+    {
+      "round": 11,
+      "global_accuracy": 0.7333333333333333,
+      "global_auc": 0.6859217171717172,
+      "global_f1": 0.8461538461538461,
+      "global_precision": 0.7333333333333333,
+      "global_recall": 1.0,
+      "cumulative_epsilon": 0.0,
+      "sigma_applied": 0.0,
+      "client_metrics": [
+        {
+          "client_id": "hospital_A",
+          "name": "Hospital A (Metro General)",
+          "loss": 2.1615,
+          "val_acc": 0.6111,
+          "samples": 75
+        },
+        {
+          "client_id": "hospital_B",
+          "name": "Hospital B (St. Jude Clinic)",
+          "loss": 0.0765,
+          "val_acc": 1.0,
+          "samples": 112
+        },
+        {
+          "client_id": "hospital_C",
+          "name": "Hospital C (Highland Medical)",
+          "loss": 1.3705,
+          "val_acc": 0.52,
+          "samples": 103
+        }
+      ]
+    },
+    {
+      "round": 12,
+      "global_accuracy": 0.7,
+      "global_auc": 0.6972853535353535,
+      "global_f1": 0.7969924812030075,
+      "global_precision": 0.7910447761194029,
+      "global_recall": 0.803030303030303,
+      "cumulative_epsilon": 0.0,
+      "sigma_applied": 0.0,
+      "client_metrics": [
+        {
+          "client_id": "hospital_A",
+          "name": "Hospital A (Metro General)",
+          "loss": 2.4224,
+          "val_acc": 0.6111,
+          "samples": 75
+        },
+        {
+          "client_id": "hospital_B",
+          "name": "Hospital B (St. Jude Clinic)",
+          "loss": 0.0592,
+          "val_acc": 1.0,
+          "samples": 112
+        },
+        {
+          "client_id": "hospital_C",
+          "name": "Hospital C (Highland Medical)",
+          "loss": 1.5872,
+          "val_acc": 0.48,
+          "samples": 103
+        }
+      ]
+    },
+    {
+      "round": 13,
+      "global_accuracy": 0.7333333333333333,
+      "global_auc": 0.6916035353535355,
+      "global_f1": 0.8378378378378378,
+      "global_precision": 0.7560975609756098,
+      "global_recall": 0.9393939393939394,
+      "cumulative_epsilon": 0.0,
+      "sigma_applied": 0.0,
+      "client_metrics": [
+        {
+          "client_id": "hospital_A",
+          "name": "Hospital A (Metro General)",
+          "loss": 2.688,
+          "val_acc": 0.7222,
+          "samples": 75
+        },
+        {
+          "client_id": "hospital_B",
+          "name": "Hospital B (St. Jude Clinic)",
+          "loss": 0.1765,
+          "val_acc": 1.0,
+          "samples": 112
+        },
+        {
+          "client_id": "hospital_C",
+          "name": "Hospital C (Highland Medical)",
+          "loss": 2.5519,
+          "val_acc": 0.56,
+          "samples": 103
+        }
+      ]
+    },
+    {
+      "round": 14,
+      "global_accuracy": 0.7444444444444445,
+      "global_auc": 0.7241161616161617,
+      "global_f1": 0.847682119205298,
+      "global_precision": 0.7529411764705882,
+      "global_recall": 0.9696969696969697,
+      "cumulative_epsilon": 0.0,
+      "sigma_applied": 0.0,
+      "client_metrics": [
+        {
+          "client_id": "hospital_A",
+          "name": "Hospital A (Metro General)",
+          "loss": 3.5089,
+          "val_acc": 0.6667,
+          "samples": 75
+        },
+        {
+          "client_id": "hospital_B",
+          "name": "Hospital B (St. Jude Clinic)",
+          "loss": 0.1927,
+          "val_acc": 1.0,
+          "samples": 112
+        },
+        {
+          "client_id": "hospital_C",
+          "name": "Hospital C (Highland Medical)",
+          "loss": 2.0565,
+          "val_acc": 0.68,
+          "samples": 103
+        }
+      ]
+    },
+    {
+      "round": 15,
+      "global_accuracy": 0.7111111111111111,
+      "global_auc": 0.6890782828282829,
+      "global_f1": 0.8289473684210527,
+      "global_precision": 0.7325581395348837,
+      "global_recall": 0.9545454545454546,
+      "cumulative_epsilon": 0.0,
+      "sigma_applied": 0.0,
+      "client_metrics": [
+        {
+          "client_id": "hospital_A",
+          "name": "Hospital A (Metro General)",
+          "loss": 3.8204,
+          "val_acc": 0.8889,
+          "samples": 75
+        },
+        {
+          "client_id": "hospital_B",
+          "name": "Hospital B (St. Jude Clinic)",
+          "loss": 0.1167,
+          "val_acc": 1.0,
+          "samples": 112
+        },
+        {
+          "client_id": "hospital_C",
+          "name": "Hospital C (Highland Medical)",
+          "loss": 2.3134,
+          "val_acc": 0.76,
+          "samples": 103
+        }
+      ]
+    }
+  ],
+  "federated_fixed_dp": [
+    {
+      "round": 1,
+      "global_accuracy": 0.6444444444444445,
+      "global_auc": 0.584280303030303,
+      "global_f1": 0.7575757575757576,
+      "global_precision": 0.7575757575757576,
+      "global_recall": 0.7575757575757576,
+      "cumulative_epsilon": 1.0902,
+      "sigma_applied": 0.85,
+      "client_metrics": [
+        {
+          "client_id": "hospital_A",
+          "name": "Hospital A (Metro General)",
+          "loss": 0.6336,
+          "val_acc": 0.7778,
+          "samples": 75
+        },
+        {
+          "client_id": "hospital_B",
+          "name": "Hospital B (St. Jude Clinic)",
+          "loss": 0.2475,
+          "val_acc": 1.0,
+          "samples": 112
+        },
+        {
+          "client_id": "hospital_C",
+          "name": "Hospital C (Highland Medical)",
+          "loss": 0.6296,
+          "val_acc": 0.68,
+          "samples": 103
+        }
+      ]
+    },
+    {
+      "round": 2,
+      "global_accuracy": 0.3888888888888889,
+      "global_auc": 0.34185606060606066,
+      "global_f1": 0.4954128440366973,
+      "global_precision": 0.627906976744186,
+      "global_recall": 0.4090909090909091,
+      "cumulative_epsilon": 2.1803,
+      "sigma_applied": 0.85,
+      "client_metrics": [
+        {
+          "client_id": "hospital_A",
+          "name": "Hospital A (Metro General)",
+          "loss": 10.8488,
+          "val_acc": 0.6111,
+          "samples": 75
+        },
+        {
+          "client_id": "hospital_B",
+          "name": "Hospital B (St. Jude Clinic)",
+          "loss": 2.0156,
+          "val_acc": 1.0,
+          "samples": 112
+        },
+        {
+          "client_id": "hospital_C",
+          "name": "Hospital C (Highland Medical)",
+          "loss": 8.0936,
+          "val_acc": 0.64,
+          "samples": 103
+        }
+      ]
+    },
+    {
+      "round": 3,
+      "global_accuracy": 0.4666666666666667,
+      "global_auc": 0.5258838383838383,
+      "global_f1": 0.5102040816326531,
+      "global_precision": 0.78125,
+      "global_recall": 0.3787878787878788,
+      "cumulative_epsilon": 3.2705,
+      "sigma_applied": 0.85,
+      "client_metrics": [
+        {
+          "client_id": "hospital_A",
+          "name": "Hospital A (Metro General)",
+          "loss": 36.6648,
+          "val_acc": 0.3333,
+          "samples": 75
+        },
+        {
+          "client_id": "hospital_B",
+          "name": "Hospital B (St. Jude Clinic)",
+          "loss": 9.7534,
+          "val_acc": 1.0,
+          "samples": 112
+        },
+        {
+          "client_id": "hospital_C",
+          "name": "Hospital C (Highland Medical)",
+          "loss": 33.117,
+          "val_acc": 0.68,
+          "samples": 103
+        }
+      ]
+    },
+    {
+      "round": 4,
+      "global_accuracy": 0.5888888888888889,
+      "global_auc": 0.513888888888889,
+      "global_f1": 0.6991869918699187,
+      "global_precision": 0.7543859649122807,
+      "global_recall": 0.6515151515151515,
+      "cumulative_epsilon": 4.3606,
+      "sigma_applied": 0.85,
+      "client_metrics": [
+        {
+          "client_id": "hospital_A",
+          "name": "Hospital A (Metro General)",
+          "loss": 57.4732,
+          "val_acc": 0.5556,
+          "samples": 75
+        },
+        {
+          "client_id": "hospital_B",
+          "name": "Hospital B (St. Jude Clinic)",
+          "loss": 14.1774,
+          "val_acc": 1.0,
+          "samples": 112
+        },
+        {
+          "client_id": "hospital_C",
+          "name": "Hospital C (Highland Medical)",
+          "loss": 42.9021,
+          "val_acc": 0.64,
+          "samples": 103
+        }
+      ]
+    },
+    {
+      "round": 5,
+      "global_accuracy": 0.6888888888888889,
+      "global_auc": 0.4766414141414141,
+      "global_f1": 0.8133333333333334,
+      "global_precision": 0.7261904761904762,
+      "global_recall": 0.9242424242424242,
+      "cumulative_epsilon": 5.4508,
+      "sigma_applied": 0.85,
+      "client_metrics": [
+        {
+          "client_id": "hospital_A",
+          "name": "Hospital A (Metro General)",
+          "loss": 98.8244,
+          "val_acc": 0.6111,
+          "samples": 75
+        },
+        {
+          "client_id": "hospital_B",
+          "name": "Hospital B (St. Jude Clinic)",
+          "loss": 30.1875,
+          "val_acc": 1.0,
+          "samples": 112
+        },
+        {
+          "client_id": "hospital_C",
+          "name": "Hospital C (Highland Medical)",
+          "loss": 93.1923,
+          "val_acc": 0.64,
+          "samples": 103
+        }
+      ]
+    },
+    {
+      "round": 6,
+      "global_accuracy": 0.4888888888888889,
+      "global_auc": 0.4494949494949495,
+      "global_f1": 0.603448275862069,
+      "global_precision": 0.7,
+      "global_recall": 0.5303030303030303,
+      "cumulative_epsilon": 6.541,
+      "sigma_applied": 0.85,
+      "client_metrics": [
+        {
+          "client_id": "hospital_A",
+          "name": "Hospital A (Metro General)",
+          "loss": 229.9903,
+          "val_acc": 0.7222,
+          "samples": 75
+        },
+        {
+          "client_id": "hospital_B",
+          "name": "Hospital B (St. Jude Clinic)",
+          "loss": 6.2407,
+          "val_acc": 1.0,
+          "samples": 112
+        },
+        {
+          "client_id": "hospital_C",
+          "name": "Hospital C (Highland Medical)",
+          "loss": 113.9788,
+          "val_acc": 0.56,
+          "samples": 103
+        }
+      ]
+    },
+    {
+      "round": 7,
+      "global_accuracy": 0.4888888888888889,
+      "global_auc": 0.4842171717171717,
+      "global_f1": 0.5818181818181818,
+      "global_precision": 0.7272727272727273,
+      "global_recall": 0.48484848484848486,
+      "cumulative_epsilon": 7.6311,
+      "sigma_applied": 0.85,
+      "client_metrics": [
+        {
+          "client_id": "hospital_A",
+          "name": "Hospital A (Metro General)",
+          "loss": 186.8801,
+          "val_acc": 0.7222,
+          "samples": 75
+        },
+        {
+          "client_id": "hospital_B",
+          "name": "Hospital B (St. Jude Clinic)",
+          "loss": 66.5034,
+          "val_acc": 1.0,
+          "samples": 112
+        },
+        {
+          "client_id": "hospital_C",
+          "name": "Hospital C (Highland Medical)",
+          "loss": 197.5967,
+          "val_acc": 0.52,
+          "samples": 103
+        }
+      ]
+    },
+    {
+      "round": 8,
+      "global_accuracy": 0.4,
+      "global_auc": 0.4119318181818182,
+      "global_f1": 0.49056603773584906,
+      "global_precision": 0.65,
+      "global_recall": 0.3939393939393939,
+      "cumulative_epsilon": 8.7213,
+      "sigma_applied": 0.85,
+      "client_metrics": [
+        {
+          "client_id": "hospital_A",
+          "name": "Hospital A (Metro General)",
+          "loss": 311.6629,
+          "val_acc": 0.5556,
+          "samples": 75
+        },
+        {
+          "client_id": "hospital_B",
+          "name": "Hospital B (St. Jude Clinic)",
+          "loss": 163.4002,
+          "val_acc": 1.0,
+          "samples": 112
+        },
+        {
+          "client_id": "hospital_C",
+          "name": "Hospital C (Highland Medical)",
+          "loss": 313.7627,
+          "val_acc": 0.6,
+          "samples": 103
+        }
+      ]
+    },
+    {
+      "round": 9,
+      "global_accuracy": 0.4,
+      "global_auc": 0.48390151515151514,
+      "global_f1": 0.425531914893617,
+      "global_precision": 0.7142857142857143,
+      "global_recall": 0.30303030303030304,
+      "cumulative_epsilon": 9.8115,
+      "sigma_applied": 0.85,
+      "client_metrics": [
+        {
+          "client_id": "hospital_A",
+          "name": "Hospital A (Metro General)",
+          "loss": 470.1783,
+          "val_acc": 0.5556,
+          "samples": 75
+        },
+        {
+          "client_id": "hospital_B",
+          "name": "Hospital B (St. Jude Clinic)",
+          "loss": 291.2935,
+          "val_acc": 1.0,
+          "samples": 112
+        },
+        {
+          "client_id": "hospital_C",
+          "name": "Hospital C (Highland Medical)",
+          "loss": 610.1493,
+          "val_acc": 0.56,
+          "samples": 103
+        }
+      ]
+    },
+    {
+      "round": 10,
+      "global_accuracy": 0.4888888888888889,
+      "global_auc": 0.5495580808080809,
+      "global_f1": 0.5490196078431373,
+      "global_precision": 0.7777777777777778,
+      "global_recall": 0.42424242424242425,
+      "cumulative_epsilon": 10.9016,
+      "sigma_applied": 0.85,
+      "client_metrics": [
+        {
+          "client_id": "hospital_A",
+          "name": "Hospital A (Metro General)",
+          "loss": 450.137,
+          "val_acc": 0.7222,
+          "samples": 75
+        },
+        {
+          "client_id": "hospital_B",
+          "name": "Hospital B (St. Jude Clinic)",
+          "loss": 381.1543,
+          "val_acc": 1.0,
+          "samples": 112
+        },
+        {
+          "client_id": "hospital_C",
+          "name": "Hospital C (Highland Medical)",
+          "loss": 498.5082,
+          "val_acc": 0.64,
+          "samples": 103
+        }
+      ]
+    },
+    {
+      "round": 11,
+      "global_accuracy": 0.43333333333333335,
+      "global_auc": 0.5438762626262627,
+      "global_f1": 0.45161290322580644,
+      "global_precision": 0.7777777777777778,
+      "global_recall": 0.3181818181818182,
+      "cumulative_epsilon": 11.9918,
+      "sigma_applied": 0.85,
+      "client_metrics": [
+        {
+          "client_id": "hospital_A",
+          "name": "Hospital A (Metro General)",
+          "loss": 564.0796,
+          "val_acc": 0.6111,
+          "samples": 75
+        },
+        {
+          "client_id": "hospital_B",
+          "name": "Hospital B (St. Jude Clinic)",
+          "loss": 419.0219,
+          "val_acc": 1.0,
+          "samples": 112
+        },
+        {
+          "client_id": "hospital_C",
+          "name": "Hospital C (Highland Medical)",
+          "loss": 729.4776,
+          "val_acc": 0.68,
+          "samples": 103
+        }
+      ]
+    },
+    {
+      "round": 12,
+      "global_accuracy": 0.6111111111111112,
+      "global_auc": 0.6379419191919191,
+      "global_f1": 0.6902654867256637,
+      "global_precision": 0.8297872340425532,
+      "global_recall": 0.5909090909090909,
+      "cumulative_epsilon": 13.0819,
+      "sigma_applied": 0.85,
+      "client_metrics": [
+        {
+          "client_id": "hospital_A",
+          "name": "Hospital A (Metro General)",
+          "loss": 651.0519,
+          "val_acc": 0.7222,
+          "samples": 75
+        },
+        {
+          "client_id": "hospital_B",
+          "name": "Hospital B (St. Jude Clinic)",
+          "loss": 959.748,
+          "val_acc": 1.0,
+          "samples": 112
+        },
+        {
+          "client_id": "hospital_C",
+          "name": "Hospital C (Highland Medical)",
+          "loss": 753.108,
+          "val_acc": 0.68,
+          "samples": 103
+        }
+      ]
+    },
+    {
+      "round": 13,
+      "global_accuracy": 0.6777777777777778,
+      "global_auc": 0.4892676767676768,
+      "global_f1": 0.8027210884353742,
+      "global_precision": 0.7283950617283951,
+      "global_recall": 0.8939393939393939,
+      "cumulative_epsilon": 14.1721,
+      "sigma_applied": 0.85,
+      "client_metrics": [
+        {
+          "client_id": "hospital_A",
+          "name": "Hospital A (Metro General)",
+          "loss": 773.7998,
+          "val_acc": 0.6111,
+          "samples": 75
+        },
+        {
+          "client_id": "hospital_B",
+          "name": "Hospital B (St. Jude Clinic)",
+          "loss": 384.1298,
+          "val_acc": 0.963,
+          "samples": 112
+        },
+        {
+          "client_id": "hospital_C",
+          "name": "Hospital C (Highland Medical)",
+          "loss": 814.4636,
+          "val_acc": 0.72,
+          "samples": 103
+        }
+      ]
+    },
+    {
+      "round": 14,
+      "global_accuracy": 0.5888888888888889,
+      "global_auc": 0.4015151515151515,
+      "global_f1": 0.7412587412587412,
+      "global_precision": 0.6883116883116883,
+      "global_recall": 0.803030303030303,
+      "cumulative_epsilon": 15.2623,
+      "sigma_applied": 0.85,
+      "client_metrics": [
+        {
+          "client_id": "hospital_A",
+          "name": "Hospital A (Metro General)",
+          "loss": 1277.4022,
+          "val_acc": 0.3889,
+          "samples": 75
+        },
+        {
+          "client_id": "hospital_B",
+          "name": "Hospital B (St. Jude Clinic)",
+          "loss": 110.392,
+          "val_acc": 1.0,
+          "samples": 112
+        },
+        {
+          "client_id": "hospital_C",
+          "name": "Hospital C (Highland Medical)",
+          "loss": 865.5047,
+          "val_acc": 0.76,
+          "samples": 103
+        }
+      ]
+    },
+    {
+      "round": 15,
+      "global_accuracy": 0.6111111111111112,
+      "global_auc": 0.46685606060606055,
+      "global_f1": 0.7445255474452555,
+      "global_precision": 0.7183098591549296,
+      "global_recall": 0.7727272727272727,
+      "cumulative_epsilon": 16.3524,
+      "sigma_applied": 0.85,
+      "client_metrics": [
+        {
+          "client_id": "hospital_A",
+          "name": "Hospital A (Metro General)",
+          "loss": 1365.4291,
+          "val_acc": 0.5556,
+          "samples": 75
+        },
+        {
+          "client_id": "hospital_B",
+          "name": "Hospital B (St. Jude Clinic)",
+          "loss": 285.7047,
+          "val_acc": 1.0,
+          "samples": 112
+        },
+        {
+          "client_id": "hospital_C",
+          "name": "Hospital C (Highland Medical)",
+          "loss": 1138.929,
+          "val_acc": 0.72,
+          "samples": 103
+        }
+      ]
+    }
+  ],
+  "federated_adaptive_dp": [
+    {
+      "round": 1,
+      "global_accuracy": 0.7222222222222222,
+      "global_auc": 0.48327020202020193,
+      "global_f1": 0.8387096774193549,
+      "global_precision": 0.7303370786516854,
+      "global_recall": 0.9848484848484849,
+      "cumulative_epsilon": 1.7712,
+      "sigma_applied": 0.5232,
+      "client_metrics": [
+        {
+          "client_id": "hospital_A",
+          "name": "Hospital A (Metro General)",
+          "loss": 0.6682,
+          "val_acc": 0.6667,
+          "samples": 75
+        },
+        {
+          "client_id": "hospital_B",
+          "name": "Hospital B (St. Jude Clinic)",
+          "loss": 0.2187,
+          "val_acc": 1.0,
+          "samples": 112
+        },
+        {
+          "client_id": "hospital_C",
+          "name": "Hospital C (Highland Medical)",
+          "loss": 0.6067,
+          "val_acc": 0.84,
+          "samples": 103
+        }
+      ]
+    },
+    {
+      "round": 2,
+      "global_accuracy": 0.7222222222222222,
+      "global_auc": 0.5265151515151515,
+      "global_f1": 0.8387096774193549,
+      "global_precision": 0.7303370786516854,
+      "global_recall": 0.9848484848484849,
+      "cumulative_epsilon": 3.4645,
+      "sigma_applied": 0.5472,
+      "client_metrics": [
+        {
+          "client_id": "hospital_A",
+          "name": "Hospital A (Metro General)",
+          "loss": 3.8562,
+          "val_acc": 0.6667,
+          "samples": 75
+        },
+        {
+          "client_id": "hospital_B",
+          "name": "Hospital B (St. Jude Clinic)",
+          "loss": 0.1429,
+          "val_acc": 1.0,
+          "samples": 112
+        },
+        {
+          "client_id": "hospital_C",
+          "name": "Hospital C (Highland Medical)",
+          "loss": 2.2325,
+          "val_acc": 0.68,
+          "samples": 103
+        }
+      ]
+    },
+    {
+      "round": 3,
+      "global_accuracy": 0.7333333333333333,
+      "global_auc": 0.5056818181818182,
+      "global_f1": 0.8441558441558441,
+      "global_precision": 0.7386363636363636,
+      "global_recall": 0.9848484848484849,
+      "cumulative_epsilon": 5.0665,
+      "sigma_applied": 0.5784,
+      "client_metrics": [
+        {
+          "client_id": "hospital_A",
+          "name": "Hospital A (Metro General)",
+          "loss": 9.9235,
+          "val_acc": 0.6667,
+          "samples": 75
+        },
+        {
+          "client_id": "hospital_B",
+          "name": "Hospital B (St. Jude Clinic)",
+          "loss": 0.0284,
+          "val_acc": 1.0,
+          "samples": 112
+        },
+        {
+          "client_id": "hospital_C",
+          "name": "Hospital C (Highland Medical)",
+          "loss": 6.7439,
+          "val_acc": 0.48,
+          "samples": 103
+        }
+      ]
+    },
+    {
+      "round": 4,
+      "global_accuracy": 0.7333333333333333,
+      "global_auc": 0.5416666666666667,
+      "global_f1": 0.8461538461538461,
+      "global_precision": 0.7333333333333333,
+      "global_recall": 1.0,
+      "cumulative_epsilon": 6.5724,
+      "sigma_applied": 0.6153,
+      "client_metrics": [
+        {
+          "client_id": "hospital_A",
+          "name": "Hospital A (Metro General)",
+          "loss": 30.0688,
+          "val_acc": 0.6111,
+          "samples": 75
+        },
+        {
+          "client_id": "hospital_B",
+          "name": "Hospital B (St. Jude Clinic)",
+          "loss": 0.6844,
+          "val_acc": 1.0,
+          "samples": 112
+        },
+        {
+          "client_id": "hospital_C",
+          "name": "Hospital C (Highland Medical)",
+          "loss": 20.0748,
+          "val_acc": 0.48,
+          "samples": 103
+        }
+      ]
+    },
+    {
+      "round": 5,
+      "global_accuracy": 0.7333333333333333,
+      "global_auc": 0.5,
+      "global_f1": 0.8461538461538461,
+      "global_precision": 0.7333333333333333,
+      "global_recall": 1.0,
+      "cumulative_epsilon": 7.9823,
+      "sigma_applied": 0.6572,
+      "client_metrics": [
+        {
+          "client_id": "hospital_A",
+          "name": "Hospital A (Metro General)",
+          "loss": 53.5427,
+          "val_acc": 0.6111,
+          "samples": 75
+        },
+        {
+          "client_id": "hospital_B",
+          "name": "Hospital B (St. Jude Clinic)",
+          "loss": 1.301,
+          "val_acc": 1.0,
+          "samples": 112
+        },
+        {
+          "client_id": "hospital_C",
+          "name": "Hospital C (Highland Medical)",
+          "loss": 27.0369,
+          "val_acc": 0.52,
+          "samples": 103
+        }
+      ]
+    },
+    {
+      "round": 6,
+      "global_accuracy": 0.7,
+      "global_auc": 0.4772727272727273,
+      "global_f1": 0.8235294117647058,
+      "global_precision": 0.7241379310344828,
+      "global_recall": 0.9545454545454546,
+      "cumulative_epsilon": 9.2994,
+      "sigma_applied": 0.7035,
+      "client_metrics": [
+        {
+          "client_id": "hospital_A",
+          "name": "Hospital A (Metro General)",
+          "loss": 93.2699,
+          "val_acc": 0.5556,
+          "samples": 75
+        },
+        {
+          "client_id": "hospital_B",
+          "name": "Hospital B (St. Jude Clinic)",
+          "loss": 0.4414,
+          "val_acc": 1.0,
+          "samples": 112
+        },
+        {
+          "client_id": "hospital_C",
+          "name": "Hospital C (Highland Medical)",
+          "loss": 63.1287,
+          "val_acc": 0.64,
+          "samples": 103
+        }
+      ]
+    },
+    {
+      "round": 7,
+      "global_accuracy": 0.7222222222222222,
+      "global_auc": 0.5050505050505051,
+      "global_f1": 0.8366013071895425,
+      "global_precision": 0.735632183908046,
+      "global_recall": 0.9696969696969697,
+      "cumulative_epsilon": 10.5286,
+      "sigma_applied": 0.7539,
+      "client_metrics": [
+        {
+          "client_id": "hospital_A",
+          "name": "Hospital A (Metro General)",
+          "loss": 103.4747,
+          "val_acc": 0.5,
+          "samples": 75
+        },
+        {
+          "client_id": "hospital_B",
+          "name": "Hospital B (St. Jude Clinic)",
+          "loss": 4.1072,
+          "val_acc": 1.0,
+          "samples": 112
+        },
+        {
+          "client_id": "hospital_C",
+          "name": "Hospital C (Highland Medical)",
+          "loss": 64.8225,
+          "val_acc": 0.64,
+          "samples": 103
+        }
+      ]
+    },
+    {
+      "round": 8,
+      "global_accuracy": 0.7111111111111111,
+      "global_auc": 0.48484848484848486,
+      "global_f1": 0.8311688311688312,
+      "global_precision": 0.7272727272727273,
+      "global_recall": 0.9696969696969697,
+      "cumulative_epsilon": 11.6755,
+      "sigma_applied": 0.808,
+      "client_metrics": [
+        {
+          "client_id": "hospital_A",
+          "name": "Hospital A (Metro General)",
+          "loss": 149.7789,
+          "val_acc": 0.6667,
+          "samples": 75
+        },
+        {
+          "client_id": "hospital_B",
+          "name": "Hospital B (St. Jude Clinic)",
+          "loss": 4.3625,
+          "val_acc": 1.0,
+          "samples": 112
+        },
+        {
+          "client_id": "hospital_C",
+          "name": "Hospital C (Highland Medical)",
+          "loss": 91.719,
+          "val_acc": 0.68,
+          "samples": 103
+        }
+      ]
+    },
+    {
+      "round": 9,
+      "global_accuracy": 0.7333333333333333,
+      "global_auc": 0.5,
+      "global_f1": 0.8461538461538461,
+      "global_precision": 0.7333333333333333,
+      "global_recall": 1.0,
+      "cumulative_epsilon": 12.746,
+      "sigma_applied": 0.8655,
+      "client_metrics": [
+        {
+          "client_id": "hospital_A",
+          "name": "Hospital A (Metro General)",
+          "loss": 236.3887,
+          "val_acc": 0.5556,
+          "samples": 75
+        },
+        {
+          "client_id": "hospital_B",
+          "name": "Hospital B (St. Jude Clinic)",
+          "loss": 15.9602,
+          "val_acc": 1.0,
+          "samples": 112
+        },
+        {
+          "client_id": "hospital_C",
+          "name": "Hospital C (Highland Medical)",
+          "loss": 189.5038,
+          "val_acc": 0.44,
+          "samples": 103
+        }
+      ]
+    },
+    {
+      "round": 10,
+      "global_accuracy": 0.7444444444444445,
+      "global_auc": 0.5208333333333333,
+      "global_f1": 0.8516129032258064,
+      "global_precision": 0.7415730337078652,
+      "global_recall": 1.0,
+      "cumulative_epsilon": 13.7463,
+      "sigma_applied": 0.9264,
+      "client_metrics": [
+        {
+          "client_id": "hospital_A",
+          "name": "Hospital A (Metro General)",
+          "loss": 307.7017,
+          "val_acc": 0.6111,
+          "samples": 75
+        },
+        {
+          "client_id": "hospital_B",
+          "name": "Hospital B (St. Jude Clinic)",
+          "loss": 21.4785,
+          "val_acc": 1.0,
+          "samples": 112
+        },
+        {
+          "client_id": "hospital_C",
+          "name": "Hospital C (Highland Medical)",
+          "loss": 232.6298,
+          "val_acc": 0.68,
+          "samples": 103
+        }
+      ]
+    },
+    {
+      "round": 11,
+      "global_accuracy": 0.7333333333333333,
+      "global_auc": 0.5135732323232323,
+      "global_f1": 0.8441558441558441,
+      "global_precision": 0.7386363636363636,
+      "global_recall": 0.9848484848484849,
+      "cumulative_epsilon": 14.6819,
+      "sigma_applied": 0.9904,
+      "client_metrics": [
+        {
+          "client_id": "hospital_A",
+          "name": "Hospital A (Metro General)",
+          "loss": 753.1995,
+          "val_acc": 0.6111,
+          "samples": 75
+        },
+        {
+          "client_id": "hospital_B",
+          "name": "Hospital B (St. Jude Clinic)",
+          "loss": 31.6436,
+          "val_acc": 1.0,
+          "samples": 112
+        },
+        {
+          "client_id": "hospital_C",
+          "name": "Hospital C (Highland Medical)",
+          "loss": 436.1188,
+          "val_acc": 0.68,
+          "samples": 103
+        }
+      ]
+    },
+    {
+      "round": 12,
+      "global_accuracy": 0.7,
+      "global_auc": 0.5037878787878788,
+      "global_f1": 0.8187919463087249,
+      "global_precision": 0.7349397590361446,
+      "global_recall": 0.9242424242424242,
+      "cumulative_epsilon": 15.5582,
+      "sigma_applied": 1.0574,
+      "client_metrics": [
+        {
+          "client_id": "hospital_A",
+          "name": "Hospital A (Metro General)",
+          "loss": 866.7121,
+          "val_acc": 0.5556,
+          "samples": 75
+        },
+        {
+          "client_id": "hospital_B",
+          "name": "Hospital B (St. Jude Clinic)",
+          "loss": 51.4717,
+          "val_acc": 1.0,
+          "samples": 112
+        },
+        {
+          "client_id": "hospital_C",
+          "name": "Hospital C (Highland Medical)",
+          "loss": 611.6444,
+          "val_acc": 0.72,
+          "samples": 103
+        }
+      ]
+    },
+    {
+      "round": 13,
+      "global_accuracy": 0.6888888888888889,
+      "global_auc": 0.5492424242424243,
+      "global_f1": 0.8,
+      "global_precision": 0.7567567567567568,
+      "global_recall": 0.8484848484848485,
+      "cumulative_epsilon": 16.3803,
+      "sigma_applied": 1.1272,
+      "client_metrics": [
+        {
+          "client_id": "hospital_A",
+          "name": "Hospital A (Metro General)",
+          "loss": 1587.5413,
+          "val_acc": 0.4444,
+          "samples": 75
+        },
+        {
+          "client_id": "hospital_B",
+          "name": "Hospital B (St. Jude Clinic)",
+          "loss": 89.724,
+          "val_acc": 1.0,
+          "samples": 112
+        },
+        {
+          "client_id": "hospital_C",
+          "name": "Hospital C (Highland Medical)",
+          "loss": 820.3196,
+          "val_acc": 0.6,
+          "samples": 103
+        }
+      ]
+    },
+    {
+      "round": 14,
+      "global_accuracy": 0.6666666666666666,
+      "global_auc": 0.4810606060606061,
+      "global_f1": 0.7945205479452054,
+      "global_precision": 0.725,
+      "global_recall": 0.8787878787878788,
+      "cumulative_epsilon": 17.1526,
+      "sigma_applied": 1.1998,
+      "client_metrics": [
+        {
+          "client_id": "hospital_A",
+          "name": "Hospital A (Metro General)",
+          "loss": 1214.0333,
+          "val_acc": 0.8889,
+          "samples": 75
+        },
+        {
+          "client_id": "hospital_B",
+          "name": "Hospital B (St. Jude Clinic)",
+          "loss": 237.329,
+          "val_acc": 1.0,
+          "samples": 112
+        },
+        {
+          "client_id": "hospital_C",
+          "name": "Hospital C (Highland Medical)",
+          "loss": 1102.6699,
+          "val_acc": 0.64,
+          "samples": 103
+        }
+      ]
+    },
+    {
+      "round": 15,
+      "global_accuracy": 0.7,
+      "global_auc": 0.5303030303030303,
+      "global_f1": 0.8137931034482758,
+      "global_precision": 0.7468354430379747,
+      "global_recall": 0.8939393939393939,
+      "cumulative_epsilon": 17.8794,
+      "sigma_applied": 1.275,
+      "client_metrics": [
+        {
+          "client_id": "hospital_A",
+          "name": "Hospital A (Metro General)",
+          "loss": 1711.6768,
+          "val_acc": 0.5556,
+          "samples": 75
+        },
+        {
+          "client_id": "hospital_B",
+          "name": "Hospital B (St. Jude Clinic)",
+          "loss": 264.4004,
+          "val_acc": 1.0,
+          "samples": 112
+        },
+        {
+          "client_id": "hospital_C",
+          "name": "Hospital C (Highland Medical)",
+          "loss": 1523.752,
+          "val_acc": 0.64,
+          "samples": 103
+        }
+      ]
+    }
+  ]
+}

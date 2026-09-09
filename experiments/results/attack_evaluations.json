@@ -1,0 +1,190 @@
+{
+  "gradient_inversion": {
+    "target_patient_features": [
+      2.452,
+      -1.558,
+      -0.992,
+      1.397,
+      0.138,
+      2.38,
+      -1.057,
+      0.563,
+      -0.616,
+      -0.598,
+      -0.999,
+      0.307,
+      -0.565
+    ],
+    "feature_names": [
+      "age",
+      "sex",
+      "cp",
+      "trestbps",
+      "chol",
+      "fbs",
+      "restecg",
+      "thalach",
+      "exang",
+      "oldpeak",
+      "slope",
+      "ca",
+      "thal"
+    ],
+    "without_dp": {
+      "reconstructed_features": [
+        2.402,
+        -1.475,
+        -0.94,
+        1.379,
+        0.122,
+        2.311,
+        -0.934,
+        0.578,
+        -0.652,
+        -0.671,
+        -0.969,
+        0.295,
+        -0.492
+      ],
+      "ground_truth_features": [
+        2.452,
+        -1.558,
+        -0.992,
+        1.397,
+        0.138,
+        2.38,
+        -1.057,
+        0.563,
+        -0.616,
+        -0.598,
+        -0.999,
+        0.307,
+        -0.565
+      ],
+      "mse": 0.0035,
+      "mae": 0.0501,
+      "cosine_similarity": 0.9993,
+      "feature_recovery_rate": 100.0,
+      "final_matching_distance": 0.00211,
+      "attack_successful": true
+    },
+    "with_dp": {
+      "reconstructed_features": [
+        0.725,
+        5.782,
+        9.091,
+        -8.494,
+        -2.505,
+        -7.262,
+        1.172,
+        1.053,
+        8.206,
+        -4.678,
+        0.732,
+        2.851,
+        0.651
+      ],
+      "ground_truth_features": [
+        2.452,
+        -1.558,
+        -0.992,
+        1.397,
+        0.138,
+        2.38,
+        -1.057,
+        0.563,
+        -0.616,
+        -0.598,
+        -0.999,
+        0.307,
+        -0.565
+      ],
+      "mse": 35.9181,
+      "mae": 4.8029,
+      "cosine_similarity": -0.5761,
+      "feature_recovery_rate": 7.69,
+      "final_matching_distance": 3583.76074,
+      "attack_successful": false
+    },
+    "privacy_gain_factor": 10262.31,
+    "protection_status": "SUCCESS - Feature reconstruction blocked by DP"
+  },
+  "membership_inference": {
+    "centralized": {
+      "attack_accuracy": 68.89,
+      "attack_precision": 66.1,
+      "attack_recall": 82.98,
+      "attack_f1": 73.58,
+      "attack_auc": 0.7071,
+      "privacy_leakage_score": 37.78,
+      "vulnerability_level": "MODERATE"
+    },
+    "federated_no_dp": {
+      "attack_accuracy": 45.56,
+      "attack_precision": 44.3,
+      "attack_recall": 87.5,
+      "attack_f1": 58.82,
+      "attack_auc": 0.4248,
+      "privacy_leakage_score": 0.0,
+      "vulnerability_level": "PROTECTED"
+    },
+    "federated_fixed_dp": {
+      "attack_accuracy": 41.11,
+      "attack_precision": 40.91,
+      "attack_recall": 18.37,
+      "attack_f1": 25.35,
+      "attack_auc": 0.4472,
+      "privacy_leakage_score": 0.0,
+      "vulnerability_level": "PROTECTED"
+    },
+    "federated_adaptive_dp": {
+      "attack_accuracy": 45.56,
+      "attack_precision": 50.85,
+      "attack_recall": 60.0,
+      "attack_f1": 55.05,
+      "attack_auc": 0.4322,
+      "privacy_leakage_score": 0.0,
+      "vulnerability_level": "PROTECTED"
+    }
+  },
+  "attribute_inference": {
+    "target_attribute": "chol",
+    "target_attribute_index": 4,
+    "models": {
+      "centralized": {
+        "reconstruction_mse": 0.8893,
+        "reconstruction_mae": 0.775,
+        "r2_score": 0.0663,
+        "attribute_leakage_index": 6.63,
+        "vulnerability": "LOW"
+      },
+      "federated_no_dp": {
+        "reconstruction_mse": 0.9809,
+        "reconstruction_mae": 0.7983,
+        "r2_score": -0.0299,
+        "attribute_leakage_index": 0.0,
+        "vulnerability": "LOW"
+      },
+      "federated_fixed_dp": {
+        "reconstruction_mse": 0.9999,
+        "reconstruction_mae": 0.8077,
+        "r2_score": -0.0499,
+        "attribute_leakage_index": 0.0,
+        "vulnerability": "LOW"
+      },
+      "federated_adaptive_dp": {
+        "reconstruction_mse": 0.9887,
+        "reconstruction_mae": 0.8088,
+        "r2_score": -0.0381,
+        "attribute_leakage_index": 0.0,
+        "vulnerability": "LOW"
+      }
+    }
+  },
+  "secure_aggregation_audit": {
+    "protocol": "Pairwise Additive Masking",
+    "zero_sum_property_verified": true,
+    "individual_client_correlation": -0.00227,
+    "eavesdropper_obscurity": "COMPLETE - Single updates appear as high-entropy Gaussian noise"
+  }
+}

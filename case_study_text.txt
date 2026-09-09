@@ -1,0 +1,117 @@
+DATA PRIVACY CASE STUDY 
+ 
+Members 
+23BCE0778 – Siya Aggarwal 
+23BCE0792 – Amal Jacob Augustine 
+23BCE0383 – Rithul Sandeep 
+Title 
+Privacy Challenges in AI-based Medical Diagnostic Systems: A Federated Learning 
+Approach for Secure Disease Prediction and Public Health Surveillance 
+ 
+Background 
+Healthcare organizations generate enormous volumes of patient information every day, 
+including medical history, symptoms, diagnoses, laboratory reports, prescriptions, and 
+treatment outcomes. AI systems require this data to identify disease patterns and improve 
+clinical decision-making. 
+Traditional AI systems rely on centralized databases where patient information from multiple 
+hospitals is collected in one location. Although this improves model performance, it 
+introduces significant privacy and security risks. 
+ 
+Existing System 
+Traditional healthcare AI systems typically follow a centralized architecture. 
+Working 
+ 
+Hospitals collect patient data.  
+ 
+Patient records are uploaded to a centralized server.  
+ 
+A machine learning model is trained using the combined dataset.  
+ 
+Predictions are generated from the centralized model.  
+Limitations 
+ 
+Raw patient data leaves hospitals.  
+ 
+Large centralized databases become attractive targets for cyber attacks.  
+ 
+High infrastructure costs.  
+ 
+Privacy regulations restrict data sharing.  
+ 
+Hospitals are reluctant to share confidential patient records.  
+ 
+Single point of failure.  
+ 
+ 
+ 
+ 
+Proposed Solution 
+Proposed Federated Learning System 
+The proposed system follows a decentralized learning architecture. 
+Workflow 
+1. Each hospital stores patient records locally.  
+2. Local AI models are trained independently.  
+3. Only model parameters are transmitted.  
+4. Model updates are encrypted before transmission.  
+5. The central server aggregates updates from all hospitals.  
+6. An improved global AI model is generated.  
+7. The updated model is distributed back to all hospitals.  
+8. No raw patient information ever leaves the hospital. 
+ 
+Objectives 
+1) To analyse the privacy risks associated with AI-based medical diagnostic systems that 
+rely on centralized collection and processing of sensitive patient data. 
+2) To study how Federated Learning can be used as a privacy-preserving machine 
+learning approach that enables collaborative model training without sharing raw 
+patient information. 
+3) To identify and evaluate privacy-preserving techniques such as encryption, 
+differential privacy, secure aggregation, and access control in protecting healthcare 
+data throughout the AI lifecycle. 
+4) To compare centralized AI architectures with decentralized Federated Learning 
+architectures in terms of privacy, security, scalability, and regulatory compliance. 
+5) To examine the ethical, legal, and security implications of deploying AI-driven 
+healthcare systems that process sensitive medical information. 
+ 
+Privacy-Preserving Technologies Used 
+The proposed system employs multiple privacy-preserving mechanisms to ensure secure 
+collaborative learning. 
+Federated Learning 
+Allows hospitals to collaboratively train AI models without exchanging patient records. 
+Differential Privacy 
+Adds carefully controlled noise to model updates, reducing the possibility of reconstructing 
+sensitive patient information from transmitted parameters. 
+Encryption 
+Protects model updates during transmission between hospitals and the central aggregation 
+server. 
+Secure Aggregation 
+Ensures that the server aggregates encrypted model updates without learning individual 
+hospital contributions. 
+Local Data Storage 
+Patient records remain within each hospital and are never transferred outside the institution. 
+Role-Based Access Control (RBAC) 
+Restricts access to sensitive patient information based on authorized user roles. 
+Audit Logging 
+Maintains records of data access and model updates to ensure accountability and traceability. 
+These mechanisms are part of the proposed architecture, which also includes encrypted local 
+databases, audit logging, secure aggregation, and differential privacy during federated 
+training.  
+ 
+Expected Outcomes 
+The proposed system is expected to 
+ 
+Preserve patient privacy throughout the learning process.  
+ 
+Eliminate the need for centralized patient databases.  
+ 
+Improve disease prediction accuracy.  
+ 
+Provide better treatment recommendations.  
+ 
+Detect disease outbreaks at an earlier stage.  
+ 
+Enable collaborative learning among hospitals.  
+ 
+Reduce privacy risks associated with centralized healthcare AI systems.  
+ 
+Improve clinical decision-making using collective knowledge. 
+ 
