@@ -1,7 +1,7 @@
 [
   {
     "index": 0,
-    "timestamp": "2026-09-09T17:59:28.299748Z",
+    "timestamp": "2026-09-10T07:42:31.109463Z",
     "actor_role": "system",
     "actor_id": "SYS_INIT",
     "action": "AUDIT_INITIALIZATION",
@@ -10,11 +10,11 @@
       "message": "Cryptographic Audit Ledger Initialized for Healthcare FL System"
     },
     "prev_hash": "0000000000000000000000000000000000000000000000000000000000000000",
-    "entry_hash": "042a2977d1969331a2df53f71d4d5715f6bbe7d0daa7d5f9eb544ceeabade341"
+    "entry_hash": "40e29fb50493974375262635e6560f49b9e0ae2f3f8b776bd692cc9dd8c48b6b"
   },
   {
     "index": 1,
-    "timestamp": "2026-09-09T17:59:28.736502Z",
+    "timestamp": "2026-09-10T07:42:31.730090Z",
     "actor_role": "system",
     "actor_id": "ORCHESTRATOR",
     "action": "EXPERIMENT_SUITE_STARTED",
@@ -22,12 +22,12 @@
     "details": {
       "config": "heart_disease"
     },
-    "prev_hash": "042a2977d1969331a2df53f71d4d5715f6bbe7d0daa7d5f9eb544ceeabade341",
-    "entry_hash": "0e80cc99bf270bbaa445bcb6a0249c8e757fd7af6971fc0ed3b36c54bf8f4b8a"
+    "prev_hash": "40e29fb50493974375262635e6560f49b9e0ae2f3f8b776bd692cc9dd8c48b6b",
+    "entry_hash": "b8a7d7de9c1cc0c4361366d0f34a0b6fc5cb6e64238752a1b6b8d88e1dfdd633"
   },
   {
     "index": 2,
-    "timestamp": "2026-09-09T17:59:35.047502Z",
+    "timestamp": "2026-09-10T07:42:38.630596Z",
     "actor_role": "server",
     "actor_id": "FED_SERVER_01",
     "action": "FEDERATED_AGGREGATION_ROUND",
@@ -47,12 +47,12 @@
         "relative_distortion": 30.9745
       }
     },
-    "prev_hash": "0e80cc99bf270bbaa445bcb6a0249c8e757fd7af6971fc0ed3b36c54bf8f4b8a",
-    "entry_hash": "75cdaf62ce60650b105f76d768d0fdbf5290d200771b948015a098213cd463ba"
+    "prev_hash": "b8a7d7de9c1cc0c4361366d0f34a0b6fc5cb6e64238752a1b6b8d88e1dfdd633",
+    "entry_hash": "898723fdb9c5ae59bbe7b6887fda8b8bfe4a59eb6a393c5aa93012c2168a0c4c"
   },
   {
     "index": 3,
-    "timestamp": "2026-09-09T17:59:35.240816Z",
+    "timestamp": "2026-09-10T07:42:38.958445Z",
     "actor_role": "server",
     "actor_id": "FED_SERVER_01",
     "action": "FEDERATED_AGGREGATION_ROUND",
@@ -72,12 +72,12 @@
         "relative_distortion": 31.009
       }
     },
-    "prev_hash": "75cdaf62ce60650b105f76d768d0fdbf5290d200771b948015a098213cd463ba",
-    "entry_hash": "cad2a47770803b007fdbe3fcedc45f4d56b2280fdf488f2fe41048e1430ae826"
+    "prev_hash": "898723fdb9c5ae59bbe7b6887fda8b8bfe4a59eb6a393c5aa93012c2168a0c4c",
+    "entry_hash": "b9cd972eade28702079c260c927ecb8a579329709d4e426da7afc229965e0e84"
   },
   {
     "index": 4,
-    "timestamp": "2026-09-09T17:59:35.416896Z",
+    "timestamp": "2026-09-10T07:42:39.185920Z",
     "actor_role": "server",
     "actor_id": "FED_SERVER_01",
     "action": "FEDERATED_AGGREGATION_ROUND",
@@ -97,12 +97,12 @@
         "relative_distortion": 31.4259
       }
     },
-    "prev_hash": "cad2a47770803b007fdbe3fcedc45f4d56b2280fdf488f2fe41048e1430ae826",
-    "entry_hash": "e9b2cf190bef080e5007948f6150dc0e41df80fc24cf1a4a7316a6d3d2c0e21b"
+    "prev_hash": "b9cd972eade28702079c260c927ecb8a579329709d4e426da7afc229965e0e84",
+    "entry_hash": "56ad271880bf20b434b63f0dbf588f3ff1b4043775d1ec85f514e5af57c18f92"
   },
   {
     "index": 5,
-    "timestamp": "2026-09-09T17:59:35.609665Z",
+    "timestamp": "2026-09-10T07:42:39.375882Z",
     "actor_role": "server",
     "actor_id": "FED_SERVER_01",
     "action": "FEDERATED_AGGREGATION_ROUND",
@@ -122,12 +122,12 @@
         "relative_distortion": 33.845
       }
     },
-    "prev_hash": "e9b2cf190bef080e5007948f6150dc0e41df80fc24cf1a4a7316a6d3d2c0e21b",
-    "entry_hash": "ad294fca72fddaaebfe748337f519997d42a0c2ab0a87f22c658084b82808281"
+    "prev_hash": "56ad271880bf20b434b63f0dbf588f3ff1b4043775d1ec85f514e5af57c18f92",
+    "entry_hash": "64d8e6047aeffaddc5f74a4c8924a30ba2cf18a5c66569d2a194d18a05cf5eaf"
   },
   {
     "index": 6,
-    "timestamp": "2026-09-09T17:59:35.833806Z",
+    "timestamp": "2026-09-10T07:42:39.580625Z",
     "actor_role": "server",
     "actor_id": "FED_SERVER_01",
     "action": "FEDERATED_AGGREGATION_ROUND",
@@ -147,12 +147,12 @@
         "relative_distortion": 30.9931
       }
     },
-    "prev_hash": "ad294fca72fddaaebfe748337f519997d42a0c2ab0a87f22c658084b82808281",
-    "entry_hash": "06ca167b6360abb708663d64d37c4d20d699f2efa6db8e02ddbc876376b4b994"
+    "prev_hash": "64d8e6047aeffaddc5f74a4c8924a30ba2cf18a5c66569d2a194d18a05cf5eaf",
+    "entry_hash": "df7f01285d8ef8295e0bec446f45806253edcbc7322ebe5be777d59bb74f0a3f"
   },
   {
     "index": 7,
-    "timestamp": "2026-09-09T17:59:35.991434Z",
+    "timestamp": "2026-09-10T07:42:39.777830Z",
     "actor_role": "server",
     "actor_id": "FED_SERVER_01",
     "action": "FEDERATED_AGGREGATION_ROUND",
@@ -172,12 +172,12 @@
         "relative_distortion": 34.1721
       }
     },
-    "prev_hash": "06ca167b6360abb708663d64d37c4d20d699f2efa6db8e02ddbc876376b4b994",
-    "entry_hash": "ec228f2982e78062b3798b67a47729d2fd3983f0c3399dbbf37cb4926e549a7a"
+    "prev_hash": "df7f01285d8ef8295e0bec446f45806253edcbc7322ebe5be777d59bb74f0a3f",
+    "entry_hash": "747f0fc80972c87eb5956ba8e08b8048e5396912569d6873dcac011037dc78d9"
   },
   {
     "index": 8,
-    "timestamp": "2026-09-09T17:59:36.140845Z",
+    "timestamp": "2026-09-10T07:42:39.985423Z",
     "actor_role": "server",
     "actor_id": "FED_SERVER_01",
     "action": "FEDERATED_AGGREGATION_ROUND",
@@ -197,12 +197,12 @@
         "relative_distortion": 34.8514
       }
     },
-    "prev_hash": "ec228f2982e78062b3798b67a47729d2fd3983f0c3399dbbf37cb4926e549a7a",
-    "entry_hash": "ee23840bb40eeef218a608efa00c38ce61e8ebb9ab9a12f2953fae34b11c2360"
+    "prev_hash": "747f0fc80972c87eb5956ba8e08b8048e5396912569d6873dcac011037dc78d9",
+    "entry_hash": "cdd55ffe499c53f6d7cac7ba0f787224b9fe23faca14f76eab5aee1b80eb6166"
   },
   {
     "index": 9,
-    "timestamp": "2026-09-09T17:59:36.270187Z",
+    "timestamp": "2026-09-10T07:42:40.197293Z",
     "actor_role": "server",
     "actor_id": "FED_SERVER_01",
     "action": "FEDERATED_AGGREGATION_ROUND",
@@ -222,12 +222,12 @@
         "relative_distortion": 37.1281
       }
     },
-    "prev_hash": "ee23840bb40eeef218a608efa00c38ce61e8ebb9ab9a12f2953fae34b11c2360",
-    "entry_hash": "1a736a7bd0afa5bb37298ddf314862ca09828d44b8ebbef157e1d47e6c2f8562"
+    "prev_hash": "cdd55ffe499c53f6d7cac7ba0f787224b9fe23faca14f76eab5aee1b80eb6166",
+    "entry_hash": "261cf6a9d5d9893ffee7d3ee7f3f42541cff0f4ae3305a75bf25afdfa044ad6f"
   },
   {
     "index": 10,
-    "timestamp": "2026-09-09T17:59:36.403515Z",
+    "timestamp": "2026-09-10T07:42:40.414673Z",
     "actor_role": "server",
     "actor_id": "FED_SERVER_01",
     "action": "FEDERATED_AGGREGATION_ROUND",
@@ -247,12 +247,12 @@
         "relative_distortion": 32.346
       }
     },
-    "prev_hash": "1a736a7bd0afa5bb37298ddf314862ca09828d44b8ebbef157e1d47e6c2f8562",
-    "entry_hash": "507f97fe0e50457f68760e480e2933cdc5ffbbb8ab9f42f286bf765485cea134"
+    "prev_hash": "261cf6a9d5d9893ffee7d3ee7f3f42541cff0f4ae3305a75bf25afdfa044ad6f",
+    "entry_hash": "f07f1d2f9032ca687f014ae9767940952ab768914674d8391be30c605f50fc90"
   },
   {
     "index": 11,
-    "timestamp": "2026-09-09T17:59:36.541813Z",
+    "timestamp": "2026-09-10T07:42:40.635163Z",
     "actor_role": "server",
     "actor_id": "FED_SERVER_01",
     "action": "FEDERATED_AGGREGATION_ROUND",
@@ -272,12 +272,12 @@
         "relative_distortion": 35.4628
       }
     },
-    "prev_hash": "507f97fe0e50457f68760e480e2933cdc5ffbbb8ab9f42f286bf765485cea134",
-    "entry_hash": "9e068059ed19358d6fa1ac0c73766aa4312798e18e57ad0d72d48a9a928562aa"
+    "prev_hash": "f07f1d2f9032ca687f014ae9767940952ab768914674d8391be30c605f50fc90",
+    "entry_hash": "fb7fa51f2d2fd1878c080b6947bbd0f36c1bd153b1bb2a070f0da878f51ed3be"
   },
   {
     "index": 12,
-    "timestamp": "2026-09-09T17:59:36.705669Z",
+    "timestamp": "2026-09-10T07:42:40.821693Z",
     "actor_role": "server",
     "actor_id": "FED_SERVER_01",
     "action": "FEDERATED_AGGREGATION_ROUND",
@@ -297,12 +297,12 @@
         "relative_distortion": 33.8231
       }
     },
-    "prev_hash": "9e068059ed19358d6fa1ac0c73766aa4312798e18e57ad0d72d48a9a928562aa",
-    "entry_hash": "2793f2baeefe1d9d83b7d199fd5cfefc2a45f64190d52fc2e8de03033b2a8eb9"
+    "prev_hash": "fb7fa51f2d2fd1878c080b6947bbd0f36c1bd153b1bb2a070f0da878f51ed3be",
+    "entry_hash": "8afad0d6944dc109faed70332312eca73a77cebefeb98bb52af894d00975643c"
   },
   {
     "index": 13,
-    "timestamp": "2026-09-09T17:59:36.844710Z",
+    "timestamp": "2026-09-10T07:42:40.986342Z",
     "actor_role": "server",
     "actor_id": "FED_SERVER_01",
     "action": "FEDERATED_AGGREGATION_ROUND",
@@ -322,12 +322,12 @@
         "relative_distortion": 30.8862
       }
     },
-    "prev_hash": "2793f2baeefe1d9d83b7d199fd5cfefc2a45f64190d52fc2e8de03033b2a8eb9",
-    "entry_hash": "8f5706186254720352ee5896f4e631780a1cdbc464792257cf17112b479c083e"
+    "prev_hash": "8afad0d6944dc109faed70332312eca73a77cebefeb98bb52af894d00975643c",
+    "entry_hash": "45154712bd729156b98b8f89152b9df9fdfb282bd326412bb242cd23ca5d8ca5"
   },
   {
     "index": 14,
-    "timestamp": "2026-09-09T17:59:36.977337Z",
+    "timestamp": "2026-09-10T07:42:41.189900Z",
     "actor_role": "server",
     "actor_id": "FED_SERVER_01",
     "action": "FEDERATED_AGGREGATION_ROUND",
@@ -347,12 +347,12 @@
         "relative_distortion": 37.2848
       }
     },
-    "prev_hash": "8f5706186254720352ee5896f4e631780a1cdbc464792257cf17112b479c083e",
-    "entry_hash": "5ba624b7d8f8c9197762912d950477869e61667398c56fb074e023d614848c82"
+    "prev_hash": "45154712bd729156b98b8f89152b9df9fdfb282bd326412bb242cd23ca5d8ca5",
+    "entry_hash": "ea543e2f4fd0f5b793775db3f99c21be9a59e47ed759f88caa30df5d7c31222e"
   },
   {
     "index": 15,
-    "timestamp": "2026-09-09T17:59:37.121611Z",
+    "timestamp": "2026-09-10T07:42:41.394482Z",
     "actor_role": "server",
     "actor_id": "FED_SERVER_01",
     "action": "FEDERATED_AGGREGATION_ROUND",
@@ -372,12 +372,12 @@
         "relative_distortion": 31.721
       }
     },
-    "prev_hash": "5ba624b7d8f8c9197762912d950477869e61667398c56fb074e023d614848c82",
-    "entry_hash": "4f9dc3dbf62396669f0036e10276e56b743b2e05cd235ba392647a457c42e72e"
+    "prev_hash": "ea543e2f4fd0f5b793775db3f99c21be9a59e47ed759f88caa30df5d7c31222e",
+    "entry_hash": "6bbf34f3d0d92167d71f4d5e332d073264290077f0652955d0d069be0e723e71"
   },
   {
     "index": 16,
-    "timestamp": "2026-09-09T17:59:37.276991Z",
+    "timestamp": "2026-09-10T07:42:41.600589Z",
     "actor_role": "server",
     "actor_id": "FED_SERVER_01",
     "action": "FEDERATED_AGGREGATION_ROUND",
@@ -397,12 +397,12 @@
         "relative_distortion": 29.805
       }
     },
-    "prev_hash": "4f9dc3dbf62396669f0036e10276e56b743b2e05cd235ba392647a457c42e72e",
-    "entry_hash": "ade974cc629b917df6509772af7a5c7a3acce7afc9253599651153673d4d2431"
+    "prev_hash": "6bbf34f3d0d92167d71f4d5e332d073264290077f0652955d0d069be0e723e71",
+    "entry_hash": "f11e2f9247208258b649eacec87db61d43f3ddbe9e126a08ce22c683a366e97c"
   },
   {
     "index": 17,
-    "timestamp": "2026-09-09T17:59:37.436701Z",
+    "timestamp": "2026-09-10T07:42:41.825726Z",
     "actor_role": "server",
     "actor_id": "FED_SERVER_01",
     "action": "FEDERATED_AGGREGATION_ROUND",
@@ -422,12 +422,12 @@
         "relative_distortion": 1.3649
       }
     },
-    "prev_hash": "ade974cc629b917df6509772af7a5c7a3acce7afc9253599651153673d4d2431",
-    "entry_hash": "d68bd5f913bbec2c01244ce939e6f7af9e19ac0dc65f30953bee1d7fd2907c1f"
+    "prev_hash": "f11e2f9247208258b649eacec87db61d43f3ddbe9e126a08ce22c683a366e97c",
+    "entry_hash": "7a6baaa674f8c79e3b0d540c0ff9ace1d4dd50a989df34200eb8a67e4ab0f751"
   },
   {
     "index": 18,
-    "timestamp": "2026-09-09T17:59:37.574864Z",
+    "timestamp": "2026-09-10T07:42:42.032120Z",
     "actor_role": "server",
     "actor_id": "FED_SERVER_01",
     "action": "FEDERATED_AGGREGATION_ROUND",
@@ -447,12 +447,12 @@
         "relative_distortion": 1.3718
       }
     },
-    "prev_hash": "d68bd5f913bbec2c01244ce939e6f7af9e19ac0dc65f30953bee1d7fd2907c1f",
-    "entry_hash": "79740f329f128dc9eeeb2654f7e74ce4aa851b366686a2dde769d0085aa2b2de"
+    "prev_hash": "7a6baaa674f8c79e3b0d540c0ff9ace1d4dd50a989df34200eb8a67e4ab0f751",
+    "entry_hash": "44d1961d1e9f35567ada0e09e6971d542345c1f5cebe7f3b1c79619b001452df"
   },
   {
     "index": 19,
-    "timestamp": "2026-09-09T17:59:37.707264Z",
+    "timestamp": "2026-09-10T07:42:42.231290Z",
     "actor_role": "server",
     "actor_id": "FED_SERVER_01",
     "action": "FEDERATED_AGGREGATION_ROUND",
@@ -472,12 +472,12 @@
         "relative_distortion": 1.4111
       }
     },
-    "prev_hash": "79740f329f128dc9eeeb2654f7e74ce4aa851b366686a2dde769d0085aa2b2de",
-    "entry_hash": "eec957033a5a3656bea0c3f642a11815a0cdd544f63d6dd57da18bd2aa7dca6f"
+    "prev_hash": "44d1961d1e9f35567ada0e09e6971d542345c1f5cebe7f3b1c79619b001452df",
+    "entry_hash": "b5734692e9165dd8613605ae9ae70ab35278a2dcf173fdc6721c3eeb173a81e3"
   },
   {
     "index": 20,
-    "timestamp": "2026-09-09T17:59:37.864064Z",
+    "timestamp": "2026-09-10T07:42:42.448670Z",
     "actor_role": "server",
     "actor_id": "FED_SERVER_01",
     "action": "FEDERATED_AGGREGATION_ROUND",
@@ -497,12 +497,12 @@
         "relative_distortion": 1.3967
       }
     },
-    "prev_hash": "eec957033a5a3656bea0c3f642a11815a0cdd544f63d6dd57da18bd2aa7dca6f",
-    "entry_hash": "d9535ae473c6f8ea6670a0ea804b0ae24e496e20d5a886873c113dd662f1d4cc"
+    "prev_hash": "b5734692e9165dd8613605ae9ae70ab35278a2dcf173fdc6721c3eeb173a81e3",
+    "entry_hash": "de8d55b62d1b683f89b42892460a61f386cf729abe0960e2a0cb5a0c79e41463"
   },
   {
     "index": 21,
-    "timestamp": "2026-09-09T17:59:37.998924Z",
+    "timestamp": "2026-09-10T07:42:42.653848Z",
     "actor_role": "server",
     "actor_id": "FED_SERVER_01",
     "action": "FEDERATED_AGGREGATION_ROUND",
@@ -522,12 +522,12 @@
         "relative_distortion": 1.4133
       }
     },
-    "prev_hash": "d9535ae473c6f8ea6670a0ea804b0ae24e496e20d5a886873c113dd662f1d4cc",
-    "entry_hash": "b4b9a931345be0a1d8bf5978bde53ea0ec8f21f70be2f4ce0d80138acddb0d25"
+    "prev_hash": "de8d55b62d1b683f89b42892460a61f386cf729abe0960e2a0cb5a0c79e41463",
+    "entry_hash": "cd0d9a719a78ba0c13d1a8106e52a4c89ec9115bd80e460943a2dc017f70e697"
   },
   {
     "index": 22,
-    "timestamp": "2026-09-09T17:59:38.160878Z",
+    "timestamp": "2026-09-10T07:42:42.880397Z",
     "actor_role": "server",
     "actor_id": "FED_SERVER_01",
     "action": "FEDERATED_AGGREGATION_ROUND",
@@ -547,12 +547,12 @@
         "relative_distortion": 1.3794
       }
     },
-    "prev_hash": "b4b9a931345be0a1d8bf5978bde53ea0ec8f21f70be2f4ce0d80138acddb0d25",
-    "entry_hash": "a8ac633028b02dbdc8caddd42b7bbc7e07c528fe773b6f3d6957171adbe63be3"
+    "prev_hash": "cd0d9a719a78ba0c13d1a8106e52a4c89ec9115bd80e460943a2dc017f70e697",
+    "entry_hash": "837441dd36fcf1a824975b6a3aa6fbe9d6f56fde5039a1726b7dcb51e56533a0"
   },
   {
     "index": 23,
-    "timestamp": "2026-09-09T17:59:38.314336Z",
+    "timestamp": "2026-09-10T07:42:43.114140Z",
     "actor_role": "server",
     "actor_id": "FED_SERVER_01",
     "action": "FEDERATED_AGGREGATION_ROUND",
@@ -572,12 +572,12 @@
         "relative_distortion": 1.3765
       }
     },
-    "prev_hash": "a8ac633028b02dbdc8caddd42b7bbc7e07c528fe773b6f3d6957171adbe63be3",
-    "entry_hash": "27553000e300f6f5263971f87d3548fe01bc1c17432d5a44ed9ffb33e7a3f48e"
+    "prev_hash": "837441dd36fcf1a824975b6a3aa6fbe9d6f56fde5039a1726b7dcb51e56533a0",
+    "entry_hash": "0c23bfce7fed46994522d474a2f4f79cee1c084b9441956c4a380944d07e2c20"
   },
   {
     "index": 24,
-    "timestamp": "2026-09-09T17:59:38.444679Z",
+    "timestamp": "2026-09-10T07:42:43.322957Z",
     "actor_role": "server",
     "actor_id": "FED_SERVER_01",
     "action": "FEDERATED_AGGREGATION_ROUND",
@@ -597,12 +597,12 @@
         "relative_distortion": 1.404
       }
     },
-    "prev_hash": "27553000e300f6f5263971f87d3548fe01bc1c17432d5a44ed9ffb33e7a3f48e",
-    "entry_hash": "6ea0c0f1ed7a4ab905488f5555da5f4f65672b515d2989d314c2aaadb2861877"
+    "prev_hash": "0c23bfce7fed46994522d474a2f4f79cee1c084b9441956c4a380944d07e2c20",
+    "entry_hash": "46623bdeb7397f3f6ead1c74f9538f3e23994a3008b2fe1fd62c10b19b5f71ae"
   },
   {
     "index": 25,
-    "timestamp": "2026-09-09T17:59:38.582258Z",
+    "timestamp": "2026-09-10T07:42:43.519193Z",
     "actor_role": "server",
     "actor_id": "FED_SERVER_01",
     "action": "FEDERATED_AGGREGATION_ROUND",
@@ -622,12 +622,12 @@
         "relative_distortion": 1.3658
       }
     },
-    "prev_hash": "6ea0c0f1ed7a4ab905488f5555da5f4f65672b515d2989d314c2aaadb2861877",
-    "entry_hash": "0a7cdba1a72cda4d77c569c52422db1ef601e9576ac8933e7d6ae993e1c7acee"
+    "prev_hash": "46623bdeb7397f3f6ead1c74f9538f3e23994a3008b2fe1fd62c10b19b5f71ae",
+    "entry_hash": "22c9b037627ef431ddc8a89ac55877ab3f761b724a8ff4c128903bbcba1a0a75"
   },
   {
     "index": 26,
-    "timestamp": "2026-09-09T17:59:38.725110Z",
+    "timestamp": "2026-09-10T07:42:43.719331Z",
     "actor_role": "server",
     "actor_id": "FED_SERVER_01",
     "action": "FEDERATED_AGGREGATION_ROUND",
@@ -647,12 +647,12 @@
         "relative_distortion": 1.3773
       }
     },
-    "prev_hash": "0a7cdba1a72cda4d77c569c52422db1ef601e9576ac8933e7d6ae993e1c7acee",
-    "entry_hash": "4eafdc88e03872d36f19b7eb28cfc8c66e4c55a8075641e293ba36d65ee3a7cb"
+    "prev_hash": "22c9b037627ef431ddc8a89ac55877ab3f761b724a8ff4c128903bbcba1a0a75",
+    "entry_hash": "1a26c331749a6291ead39db9b36059c941b13b1c53f8d928aad142d25efe9731"
   },
   {
     "index": 27,
-    "timestamp": "2026-09-09T17:59:38.917034Z",
+    "timestamp": "2026-09-10T07:42:43.913739Z",
     "actor_role": "server",
     "actor_id": "FED_SERVER_01",
     "action": "FEDERATED_AGGREGATION_ROUND",
@@ -672,12 +672,12 @@
         "relative_distortion": 1.3641
       }
     },
-    "prev_hash": "4eafdc88e03872d36f19b7eb28cfc8c66e4c55a8075641e293ba36d65ee3a7cb",
-    "entry_hash": "b5d2361a6becd82debe48c3a1866f46c528ca70c9d10395d3f1e10206fef3f7b"
+    "prev_hash": "1a26c331749a6291ead39db9b36059c941b13b1c53f8d928aad142d25efe9731",
+    "entry_hash": "c9a22b92264f8180a6aa4cce3c77bd94bf02c4f9f21abe1cf81b2acec67e90fb"
   },
   {
     "index": 28,
-    "timestamp": "2026-09-09T17:59:39.072398Z",
+    "timestamp": "2026-09-10T07:42:44.171462Z",
     "actor_role": "server",
     "actor_id": "FED_SERVER_01",
     "action": "FEDERATED_AGGREGATION_ROUND",
@@ -697,12 +697,12 @@
         "relative_distortion": 1.3928
       }
     },
-    "prev_hash": "b5d2361a6becd82debe48c3a1866f46c528ca70c9d10395d3f1e10206fef3f7b",
-    "entry_hash": "e1863864fcb3a670baafd7b5adaa2ea90090baf7e0b950e7a1c77fa42740c6c1"
+    "prev_hash": "c9a22b92264f8180a6aa4cce3c77bd94bf02c4f9f21abe1cf81b2acec67e90fb",
+    "entry_hash": "845a6837b81a9751e766d822a02c0fbe186879252929b5ec78b324d6f0507265"
   },
   {
     "index": 29,
-    "timestamp": "2026-09-09T17:59:39.237138Z",
+    "timestamp": "2026-09-10T07:42:44.393783Z",
     "actor_role": "server",
     "actor_id": "FED_SERVER_01",
     "action": "FEDERATED_AGGREGATION_ROUND",
@@ -722,12 +722,12 @@
         "relative_distortion": 1.4357
       }
     },
-    "prev_hash": "e1863864fcb3a670baafd7b5adaa2ea90090baf7e0b950e7a1c77fa42740c6c1",
-    "entry_hash": "a29ac74844abc3375d49c28c87b4575fd9430decb1e5a3f1ddac7e9258186a8e"
+    "prev_hash": "845a6837b81a9751e766d822a02c0fbe186879252929b5ec78b324d6f0507265",
+    "entry_hash": "cebcf5c39c17a5652cb64994df7c1dc027192c5d1f60c6e83de5cd019c63a449"
   },
   {
     "index": 30,
-    "timestamp": "2026-09-09T17:59:39.383151Z",
+    "timestamp": "2026-09-10T07:42:44.600458Z",
     "actor_role": "server",
     "actor_id": "FED_SERVER_01",
     "action": "FEDERATED_AGGREGATION_ROUND",
@@ -747,12 +747,12 @@
         "relative_distortion": 1.3704
       }
     },
-    "prev_hash": "a29ac74844abc3375d49c28c87b4575fd9430decb1e5a3f1ddac7e9258186a8e",
-    "entry_hash": "d99e70096cd8c7442429f88304d914826a1ac0efc8731558134a14dc8ddfb564"
+    "prev_hash": "cebcf5c39c17a5652cb64994df7c1dc027192c5d1f60c6e83de5cd019c63a449",
+    "entry_hash": "6ab0c56ff78976b2f7273f6f06d06e454482191fc3a1fa8ab3f5e10e57da6ba6"
   },
   {
     "index": 31,
-    "timestamp": "2026-09-09T17:59:39.535730Z",
+    "timestamp": "2026-09-10T07:42:44.795676Z",
     "actor_role": "server",
     "actor_id": "FED_SERVER_01",
     "action": "FEDERATED_AGGREGATION_ROUND",
@@ -772,12 +772,12 @@
         "relative_distortion": 1.3677
       }
     },
-    "prev_hash": "d99e70096cd8c7442429f88304d914826a1ac0efc8731558134a14dc8ddfb564",
-    "entry_hash": "348ece0da67d55c961dcc33e5dd89cae878c64ae7011beb9f98547781414ce0d"
+    "prev_hash": "6ab0c56ff78976b2f7273f6f06d06e454482191fc3a1fa8ab3f5e10e57da6ba6",
+    "entry_hash": "d5bf6fc68695e1b153758956bfd1a82137cf473ae18c1a2819044cf9d18e7be3"
   },
   {
     "index": 32,
-    "timestamp": "2026-09-09T17:59:39.810090Z",
+    "timestamp": "2026-09-10T07:42:45.015091Z",
     "actor_role": "server",
     "actor_id": "FED_SERVER_01",
     "action": "FEDERATED_AGGREGATION_ROUND",
@@ -797,12 +797,12 @@
         "relative_distortion": 2.1796
       }
     },
-    "prev_hash": "348ece0da67d55c961dcc33e5dd89cae878c64ae7011beb9f98547781414ce0d",
-    "entry_hash": "e7287003e59307cf84e69d3c0bca46c6413b400668c96151f221a145cbc9d5e5"
+    "prev_hash": "d5bf6fc68695e1b153758956bfd1a82137cf473ae18c1a2819044cf9d18e7be3",
+    "entry_hash": "5071c06096778ece0cebb29221efdcd1f16e7bd439d99974e899457caf26045f"
   },
   {
     "index": 33,
-    "timestamp": "2026-09-09T17:59:39.969281Z",
+    "timestamp": "2026-09-10T07:42:45.345214Z",
     "actor_role": "server",
     "actor_id": "FED_SERVER_01",
     "action": "FEDERATED_AGGREGATION_ROUND",
@@ -822,12 +822,12 @@
         "relative_distortion": 2.1569
       }
     },
-    "prev_hash": "e7287003e59307cf84e69d3c0bca46c6413b400668c96151f221a145cbc9d5e5",
-    "entry_hash": "02bc2fd029e6b0d967ae48877e6e43bb2f36fe7638fe56d7be286777b7238d70"
+    "prev_hash": "5071c06096778ece0cebb29221efdcd1f16e7bd439d99974e899457caf26045f",
+    "entry_hash": "f9478704d0ea78a1c4e99575679828b6394f6914ecabac63ba836a7f9494ba72"
   },
   {
     "index": 34,
-    "timestamp": "2026-09-09T17:59:40.129022Z",
+    "timestamp": "2026-09-10T07:42:45.553347Z",
     "actor_role": "server",
     "actor_id": "FED_SERVER_01",
     "action": "FEDERATED_AGGREGATION_ROUND",
@@ -847,12 +847,12 @@
         "relative_distortion": 2.0532
       }
     },
-    "prev_hash": "02bc2fd029e6b0d967ae48877e6e43bb2f36fe7638fe56d7be286777b7238d70",
-    "entry_hash": "a5b3ae54f4ec6ba0f4e6b63458db639b2bc29f5f1adc0b0511325b9e6fdb95dc"
+    "prev_hash": "f9478704d0ea78a1c4e99575679828b6394f6914ecabac63ba836a7f9494ba72",
+    "entry_hash": "0b093eb1f8586cded732623e59aa7ecc4c2c208a1adc745f050399a3c492317b"
   },
   {
     "index": 35,
-    "timestamp": "2026-09-09T17:59:40.283356Z",
+    "timestamp": "2026-09-10T07:42:45.753258Z",
     "actor_role": "server",
     "actor_id": "FED_SERVER_01",
     "action": "FEDERATED_AGGREGATION_ROUND",
@@ -872,12 +872,12 @@
         "relative_distortion": 1.9262
       }
     },
-    "prev_hash": "a5b3ae54f4ec6ba0f4e6b63458db639b2bc29f5f1adc0b0511325b9e6fdb95dc",
-    "entry_hash": "170cf5218b3f4603fc8085ff6f7a3e5321a8c3ee1e7410b1bb35796c0f10ae83"
+    "prev_hash": "0b093eb1f8586cded732623e59aa7ecc4c2c208a1adc745f050399a3c492317b",
+    "entry_hash": "e18039eceb381b6cb6ee72445855bb667282447cabfd5c0494b8aa555bed7dbb"
   },
   {
     "index": 36,
-    "timestamp": "2026-09-09T17:59:40.445041Z",
+    "timestamp": "2026-09-10T07:42:45.961051Z",
     "actor_role": "server",
     "actor_id": "FED_SERVER_01",
     "action": "FEDERATED_AGGREGATION_ROUND",
@@ -897,12 +897,12 @@
         "relative_distortion": 1.831
       }
     },
-    "prev_hash": "170cf5218b3f4603fc8085ff6f7a3e5321a8c3ee1e7410b1bb35796c0f10ae83",
-    "entry_hash": "3e7e4740a0eb220e25ea096cd1cb1e1d2afaed7e67a2b38692b95577ee6fc27e"
+    "prev_hash": "e18039eceb381b6cb6ee72445855bb667282447cabfd5c0494b8aa555bed7dbb",
+    "entry_hash": "ef820cc551fcf6bd9d64df8a5a30034be67303c47ae45062c492f2e206fa82af"
   },
   {
     "index": 37,
-    "timestamp": "2026-09-09T17:59:40.611448Z",
+    "timestamp": "2026-09-10T07:42:46.214237Z",
     "actor_role": "server",
     "actor_id": "FED_SERVER_01",
     "action": "FEDERATED_AGGREGATION_ROUND",
@@ -922,12 +922,12 @@
         "relative_distortion": 1.7153
       }
     },
-    "prev_hash": "3e7e4740a0eb220e25ea096cd1cb1e1d2afaed7e67a2b38692b95577ee6fc27e",
-    "entry_hash": "b14bdc2f1c719458039491ba51f23011adbd6d0940ac7c9104eb1c842ddf3dc7"
+    "prev_hash": "ef820cc551fcf6bd9d64df8a5a30034be67303c47ae45062c492f2e206fa82af",
+    "entry_hash": "db6e5213f16f6d7bfe4b5dd9cddff72f5f8d77fbc9af6694645c5deedde80dd4"
   },
   {
     "index": 38,
-    "timestamp": "2026-09-09T17:59:40.757984Z",
+    "timestamp": "2026-09-10T07:42:46.633007Z",
     "actor_role": "server",
     "actor_id": "FED_SERVER_01",
     "action": "FEDERATED_AGGREGATION_ROUND",
@@ -947,12 +947,12 @@
         "relative_distortion": 1.5324
       }
     },
-    "prev_hash": "b14bdc2f1c719458039491ba51f23011adbd6d0940ac7c9104eb1c842ddf3dc7",
-    "entry_hash": "e1de965552b8bc715f20d830e58ce7d8c9181730413adef53891dcb2f8337372"
+    "prev_hash": "db6e5213f16f6d7bfe4b5dd9cddff72f5f8d77fbc9af6694645c5deedde80dd4",
+    "entry_hash": "08c4f5a7f24def33df9fcb50a5e0d70a8fa1984be790253ef3ff323bc8cfae76"
   },
   {
     "index": 39,
-    "timestamp": "2026-09-09T17:59:40.887955Z",
+    "timestamp": "2026-09-10T07:42:47.061450Z",
     "actor_role": "server",
     "actor_id": "FED_SERVER_01",
     "action": "FEDERATED_AGGREGATION_ROUND",
@@ -972,12 +972,12 @@
         "relative_distortion": 1.4689
       }
     },
-    "prev_hash": "e1de965552b8bc715f20d830e58ce7d8c9181730413adef53891dcb2f8337372",
-    "entry_hash": "344b7b84271ab10404e27aa91f86464fd0f089b695ac5a7b67c501661ba40258"
+    "prev_hash": "08c4f5a7f24def33df9fcb50a5e0d70a8fa1984be790253ef3ff323bc8cfae76",
+    "entry_hash": "0bec4b11372975aef7945ea91ddc304a3107045322c74d9d5939442fe7d1d7e4"
   },
   {
     "index": 40,
-    "timestamp": "2026-09-09T17:59:41.017429Z",
+    "timestamp": "2026-09-10T07:42:47.375613Z",
     "actor_role": "server",
     "actor_id": "FED_SERVER_01",
     "action": "FEDERATED_AGGREGATION_ROUND",
@@ -997,12 +997,12 @@
         "relative_distortion": 1.3553
       }
     },
-    "prev_hash": "344b7b84271ab10404e27aa91f86464fd0f089b695ac5a7b67c501661ba40258",
-    "entry_hash": "ca4d40e5fa7ed6d63da4fbb2c0cd31482376d1e535a337041f4744311e35f5a4"
+    "prev_hash": "0bec4b11372975aef7945ea91ddc304a3107045322c74d9d5939442fe7d1d7e4",
+    "entry_hash": "7ff73323908234a17815ac87044b55bbbbeddc8485771574b150da04b672b5bb"
   },
   {
     "index": 41,
-    "timestamp": "2026-09-09T17:59:41.150010Z",
+    "timestamp": "2026-09-10T07:42:47.641629Z",
     "actor_role": "server",
     "actor_id": "FED_SERVER_01",
     "action": "FEDERATED_AGGREGATION_ROUND",
@@ -1022,12 +1022,12 @@
         "relative_distortion": 1.3005
       }
     },
-    "prev_hash": "ca4d40e5fa7ed6d63da4fbb2c0cd31482376d1e535a337041f4744311e35f5a4",
-    "entry_hash": "68de8470af8872903608af2939ad192ed031dd87d8ae2a92be13af7f72bfd3a4"
+    "prev_hash": "7ff73323908234a17815ac87044b55bbbbeddc8485771574b150da04b672b5bb",
+    "entry_hash": "c09456dfee0455a257270e37c30c1b5c52b5d7a68f34634f837bb1027765610b"
   },
   {
     "index": 42,
-    "timestamp": "2026-09-09T17:59:41.274431Z",
+    "timestamp": "2026-09-10T07:42:47.946521Z",
     "actor_role": "server",
     "actor_id": "FED_SERVER_01",
     "action": "FEDERATED_AGGREGATION_ROUND",
@@ -1047,12 +1047,12 @@
         "relative_distortion": 1.2275
       }
     },
-    "prev_hash": "68de8470af8872903608af2939ad192ed031dd87d8ae2a92be13af7f72bfd3a4",
-    "entry_hash": "37bde4238fdb0826c827276993278f5acbed366f7e8dfb7a00217a96b311db4a"
+    "prev_hash": "c09456dfee0455a257270e37c30c1b5c52b5d7a68f34634f837bb1027765610b",
+    "entry_hash": "13f1ce01946a2ebf3f8ec8de9a127bcd1764d66272301bf08abfeb09edfd9295"
   },
   {
     "index": 43,
-    "timestamp": "2026-09-09T17:59:41.413336Z",
+    "timestamp": "2026-09-10T07:42:48.216041Z",
     "actor_role": "server",
     "actor_id": "FED_SERVER_01",
     "action": "FEDERATED_AGGREGATION_ROUND",
@@ -1072,12 +1072,12 @@
         "relative_distortion": 1.1145
       }
     },
-    "prev_hash": "37bde4238fdb0826c827276993278f5acbed366f7e8dfb7a00217a96b311db4a",
-    "entry_hash": "29e2095ce8e302ed43884fd1313ac2bbe9025814fb2d3040ff638f001e5c8c16"
+    "prev_hash": "13f1ce01946a2ebf3f8ec8de9a127bcd1764d66272301bf08abfeb09edfd9295",
+    "entry_hash": "135224fbf5dee8a83f73fec0ee3ba5643d3e56f2d02aa900e88e610dd86916dd"
   },
   {
     "index": 44,
-    "timestamp": "2026-09-09T17:59:41.546949Z",
+    "timestamp": "2026-09-10T07:42:48.510259Z",
     "actor_role": "server",
     "actor_id": "FED_SERVER_01",
     "action": "FEDERATED_AGGREGATION_ROUND",
@@ -1097,12 +1097,12 @@
         "relative_distortion": 1.0887
       }
     },
-    "prev_hash": "29e2095ce8e302ed43884fd1313ac2bbe9025814fb2d3040ff638f001e5c8c16",
-    "entry_hash": "f6a46f18c5e0b705fa3d5eaf9aee3bfaac998db431b958d124185dde167539c1"
+    "prev_hash": "135224fbf5dee8a83f73fec0ee3ba5643d3e56f2d02aa900e88e610dd86916dd",
+    "entry_hash": "13ec0105aab55d199056636cfa750174287d1d69eecf18f57adf2919a8ab4ffc"
   },
   {
     "index": 45,
-    "timestamp": "2026-09-09T17:59:41.672191Z",
+    "timestamp": "2026-09-10T07:42:48.752569Z",
     "actor_role": "server",
     "actor_id": "FED_SERVER_01",
     "action": "FEDERATED_AGGREGATION_ROUND",
@@ -1122,12 +1122,12 @@
         "relative_distortion": 0.9774
       }
     },
-    "prev_hash": "f6a46f18c5e0b705fa3d5eaf9aee3bfaac998db431b958d124185dde167539c1",
-    "entry_hash": "a2850ce645f5967dc782fe67daffd62d9e4b4ed348bf861cb54542af3893c212"
+    "prev_hash": "13ec0105aab55d199056636cfa750174287d1d69eecf18f57adf2919a8ab4ffc",
+    "entry_hash": "62f62099ebf0ea5f6115aaf9d7e25a95e421076d96b3797c01c450cca681b99f"
   },
   {
     "index": 46,
-    "timestamp": "2026-09-09T17:59:41.797094Z",
+    "timestamp": "2026-09-10T07:42:49.019796Z",
     "actor_role": "server",
     "actor_id": "FED_SERVER_01",
     "action": "FEDERATED_AGGREGATION_ROUND",
@@ -1147,12 +1147,12 @@
         "relative_distortion": 0.9082
       }
     },
-    "prev_hash": "a2850ce645f5967dc782fe67daffd62d9e4b4ed348bf861cb54542af3893c212",
-    "entry_hash": "3e547248462a52445a3b8190e61eedf4005f7c3666c2a6377118219998b3c269"
+    "prev_hash": "62f62099ebf0ea5f6115aaf9d7e25a95e421076d96b3797c01c450cca681b99f",
+    "entry_hash": "d4b11f81603372210cd698dbdb23f5f3092793c62c1d2ded372b3133bfec51de"
   },
   {
     "index": 47,
-    "timestamp": "2026-09-09T17:59:42.507439Z",
+    "timestamp": "2026-09-10T07:42:49.976500Z",
     "actor_role": "system",
     "actor_id": "ORCHESTRATOR",
     "action": "EXPERIMENT_SUITE_COMPLETED",
@@ -1164,7 +1164,7 @@
         "round_trajectories.json"
       ]
     },
-    "prev_hash": "3e547248462a52445a3b8190e61eedf4005f7c3666c2a6377118219998b3c269",
-    "entry_hash": "4bd06c69a8bac21b79e44f5e3e1ebcf20d922842e229ae9b5956961c6f100cb5"
+    "prev_hash": "d4b11f81603372210cd698dbdb23f5f3092793c62c1d2ded372b3133bfec51de",
+    "entry_hash": "a94e487537730630b96161ddfeca2ad5b9e7adac039e78684101f4ca07d87740"
   }
 ]

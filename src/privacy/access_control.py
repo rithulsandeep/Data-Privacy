@@ -101,3 +101,8 @@ class AccessControlManager:
             "description": descriptions.get(role, ""),
             "permissions": permissions
         }
+
+
+# Convenience module instances
+access_control_manager = AccessControlManager()
+access_controller = AccessControlManager()

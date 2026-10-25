@@ -10,7 +10,7 @@ import hashlib
 import json
 import os
 import time
-from datetime import datetime
+from datetime import datetime, timezone
 
 
 class AuditLogger:
@@ -27,7 +27,7 @@ class AuditLogger:
         if not self.chain:
             genesis_entry = {
                 "index": 0,
-                "timestamp": datetime.utcnow().isoformat() + "Z",
+                "timestamp": datetime.now(timezone.utc).isoformat(),
                 "actor_role": "system",
                 "actor_id": "SYS_INIT",
                 "action": "AUDIT_INITIALIZATION",
@@ -67,7 +67,7 @@ class AuditLogger:
 
         entry = {
             "index": new_index,
-            "timestamp": datetime.utcnow().isoformat() + "Z",
+            "timestamp": datetime.now(timezone.utc).isoformat(),
             "actor_role": actor_role,
             "actor_id": actor_id,
             "action": action,
@@ -103,6 +103,16 @@ class AuditLogger:
                 return False, i
 
         return True, None
+
+    def verify_chain_integrity(self, chain: Optional[List[Dict[str, Any]]] = None) -> bool:
+        """Convenience method returning boolean validity of chain."""
+        if chain is not None:
+            temp_logger = AuditLogger()
+            temp_logger.chain = chain
+            valid, _ = temp_logger.verify_integrity()
+            return valid
+        valid, _ = self.verify_integrity()
+        return valid
 
     def get_entries(self, limit: int = 100) -> List[Dict[str, Any]]:
         """Returns recent audit entries."""
